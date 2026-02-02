@@ -264,6 +264,65 @@ ADM-002 + DAT-004
     └── CMP-003 (Data Governance)
 ```
 
+### Routing Chain
+```
+NAV-001 + DIS-003
+    └── RTE-001 (Calculate Route)
+        └── RTE-002 (Turn-by-Turn Directions)
+        └── RTE-003 (Waypoints)
+        └── RTE-004 (Route Preferences)
+        └── RTE-005 (Service Areas/Isochrones)
+```
+
+### Geofencing Chain
+```
+DRW-003 + DRW-004
+    └── GEO-001 (Create Geofence)
+        └── GEO-002 (Monitor Entry/Exit) [also needs LOC-002]
+            └── GEO-003 (Notifications)
+            └── GEO-004 (Rules and Actions)
+```
+
+### Geoprocessing Chain
+```
+DIS-003 + INT-001
+    └── GPR-001 (Buffer)
+    └── GPR-003 (Union/Merge)
+
+DIS-003 + LAY-001
+    └── GPR-002 (Intersect/Clip)
+    └── GPR-004 (Spatial Join)
+        └── GPR-005 (Statistics by Area)
+```
+
+### Print Chain
+```
+DIS-001 + DIS-003 + IMP-004
+    └── PRT-001 (Print Layout Template)
+        └── PRT-002 (Map Elements)
+        └── PRT-003 (Paper Size)
+        └── PRT-004 (Map Series) [also needs INT-005]
+```
+
+### Charts Chain
+```
+DIS-003 + INT-005
+    └── CHT-001 (Display Chart)
+        └── CHT-002 (Link Chart to Map) [also needs INT-001]
+    └── CHT-003 (Statistics Panel)
+
+CHT-001 + CHT-002 + CHT-003
+    └── CHT-004 (Dashboard Layout)
+```
+
+### 3D/Terrain Chain
+```
+DIS-001 + NAV-001
+    └── 3DT-001 (3D Terrain)
+        └── 3DT-002 (Extrude Features) [also needs DIS-003]
+        └── 3DT-003 (3D Navigation) [also needs NAV-005]
+```
+
 ---
 
 ## Quick Reference Table
@@ -376,6 +435,37 @@ ADM-002 + DAT-004
 | CMP-001 | ACC-001, ACC-002, ACC-003 |
 | CMP-002 | ITG-003 |
 | CMP-003 | ADM-002, DAT-004 |
+| **Routing & Directions** |
+| RTE-001 | NAV-001, DIS-003 |
+| RTE-002 | RTE-001 |
+| RTE-003 | RTE-001 |
+| RTE-004 | RTE-001 |
+| RTE-005 | RTE-001, DRW-003 |
+| **Geofencing** |
+| GEO-001 | DRW-003, DRW-004 |
+| GEO-002 | GEO-001, LOC-002 |
+| GEO-003 | GEO-002 |
+| GEO-004 | GEO-001, GEO-002 |
+| **Geoprocessing** |
+| GPR-001 | DIS-003, INT-001 |
+| GPR-002 | DIS-003, LAY-001 |
+| GPR-003 | DIS-003, INT-001 |
+| GPR-004 | DIS-003, LAY-001 |
+| GPR-005 | DIS-003, GPR-004 |
+| **Print & Cartography** |
+| PRT-001 | DIS-001, DIS-003, IMP-004 |
+| PRT-002 | PRT-001, CTL-002 |
+| PRT-003 | PRT-001, IMP-003 |
+| PRT-004 | PRT-001, PRT-003, INT-005 |
+| **Charts & Dashboards** |
+| CHT-001 | DIS-003, INT-005 |
+| CHT-002 | CHT-001, INT-001 |
+| CHT-003 | DIS-003, INT-005 |
+| CHT-004 | CHT-001, CHT-002, CHT-003 |
+| **3D & Terrain** |
+| 3DT-001 | DIS-001, NAV-001 |
+| 3DT-002 | 3DT-001, DIS-003 |
+| 3DT-003 | 3DT-001, NAV-001, NAV-005 |
 
 ---
 

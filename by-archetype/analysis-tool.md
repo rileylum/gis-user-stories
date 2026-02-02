@@ -118,6 +118,15 @@ These stories significantly enhance analysis capabilities:
 - [DAT-002](../by-category/14-data-management.md#dat-002-indicate-data-freshness): Indicate Data Freshness
 - [DAT-003](../by-category/14-data-management.md#dat-003-download-data): Download Data
 
+### Geoprocessing
+- [GPR-001](../by-category/22-geoprocessing.md#gpr-001-buffer-features): Buffer Features
+- [GPR-002](../by-category/22-geoprocessing.md#gpr-002-intersectclip-layers): Intersect/Clip Layers
+- [GPR-003](../by-category/22-geoprocessing.md#gpr-003-unionmerge-features): Union/Merge Features
+
+### Charts
+- [CHT-001](../by-category/24-charts-dashboards.md#cht-001-display-attribute-chart-bar-pie-line): Display Attribute Chart
+- [CHT-003](../by-category/24-charts-dashboards.md#cht-003-display-summary-statistics-panel): Display Summary Statistics Panel
+
 ### Performance
 - [PRF-001](../by-category/17-performance.md#prf-001-fast-initial-load): Fast Initial Load
 - [PRF-003](../by-category/17-performance.md#prf-003-display-loading-indicators): Display Loading Indicators
@@ -155,6 +164,21 @@ These stories add advanced analysis capabilities:
 
 ### Compliance
 - [CMP-003](../by-category/19-compliance.md#cmp-003-data-governance): Data Governance
+
+### Geoprocessing (Advanced)
+- [GPR-004](../by-category/22-geoprocessing.md#gpr-004-spatial-join-point-in-polygon-nearest): Spatial Join
+- [GPR-005](../by-category/22-geoprocessing.md#gpr-005-calculate-statistics-by-area): Calculate Statistics by Area
+
+### Routing
+- [RTE-005](../by-category/20-routing.md#rte-005-calculate-service-areasisochrones): Calculate Service Areas/Isochrones
+
+### Charts (Advanced)
+- [CHT-002](../by-category/24-charts-dashboards.md#cht-002-link-chart-to-map-selection): Link Chart to Map Selection
+- [CHT-004](../by-category/24-charts-dashboards.md#cht-004-create-dashboard-layout): Create Dashboard Layout
+
+### 3D & Terrain
+- [3DT-001](../by-category/25-3d-terrain.md#3dt-001-display-3d-terrainelevation): Display 3D Terrain
+- [3DT-002](../by-category/25-3d-terrain.md#3dt-002-extrude-features-by-attribute): Extrude Features by Attribute
 
 ## Not Typically Needed
 

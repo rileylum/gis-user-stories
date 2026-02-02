@@ -116,6 +116,14 @@ These stories add polish and advanced functionality:
 ### Compliance
 - [CMP-002](../by-category/19-compliance.md#cmp-002-privacy-compliance): Privacy Compliance
 
+### Routing
+- [RTE-001](../by-category/20-routing.md#rte-001-calculate-route-between-points): Calculate Route Between Points
+- [RTE-002](../by-category/20-routing.md#rte-002-display-turn-by-turn-directions): Display Turn-by-Turn Directions
+
+### 3D
+- [3DT-001](../by-category/25-3d-terrain.md#3dt-001-display-3d-terrainelevation): Display 3D Terrain
+- [3DT-003](../by-category/25-3d-terrain.md#3dt-003-navigate-in-3d-tilt-rotate-fly-to): Navigate in 3D
+
 ## Not Typically Needed
 
 These stories are usually not applicable to public portals:

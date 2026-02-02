@@ -37,7 +37,7 @@ For common project types, use our [starter kits](quick-start/starter-kits/) whic
 
 ### 3. Browse by Category
 
-Stories are organized into 19 categories:
+Stories are organized into 25 categories:
 
 | # | Category | Stories | Description |
 |---|----------|---------|-------------|
@@ -60,6 +60,12 @@ Stories are organized into 19 categories:
 | 17 | [Performance](by-category/17-performance.md) | 4 | Speed, offline, caching |
 | 18 | [Error Handling](by-category/18-error-handling.md) | 4 | Errors, retry, recovery |
 | 19 | [Compliance](by-category/19-compliance.md) | 3 | WCAG, privacy, governance |
+| 20 | [Routing & Directions](by-category/20-routing.md) | 5 | Routes, directions, isochrones |
+| 21 | [Geofencing](by-category/21-geofencing.md) | 4 | Zone monitoring, notifications |
+| 22 | [Geoprocessing](by-category/22-geoprocessing.md) | 5 | Buffer, intersect, spatial join |
+| 23 | [Print & Cartography](by-category/23-print-cartography.md) | 4 | Print layouts, map series |
+| 24 | [Charts & Dashboards](by-category/24-charts-dashboards.md) | 4 | Charts, statistics, dashboards |
+| 25 | [3D & Terrain](by-category/25-3d-terrain.md) | 3 | 3D terrain, extrusion, navigation |
 
 ### 4. Customize Stories for Your Project
 
@@ -136,3 +142,9 @@ To add new stories:
 | Performance | PRF | PRF-001 |
 | Error Handling | ERR | ERR-001 |
 | Compliance | CMP | CMP-001 |
+| Routing & Directions | RTE | RTE-001 |
+| Geofencing | GEO | GEO-001 |
+| Geoprocessing | GPR | GPR-001 |
+| Print & Cartography | PRT | PRT-001 |
+| Charts & Dashboards | CHT | CHT-001 |
+| 3D & Terrain | 3DT | 3DT-001 |

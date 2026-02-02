@@ -61,6 +61,9 @@ The process of creating digital map features by tracing or drawing on a map.
 ### Extent
 The geographic area visible in the current map view. Defined by the bounding coordinates.
 
+### Extrusion
+The process of extending a 2D shape into 3D by giving it height. In mapping, polygons can be extruded based on an attribute value to create 3D visualizations.
+
 ### EPSG Code
 A standardized numeric code identifying a coordinate reference system. Examples:
 - EPSG:4326 = WGS84 (lat/lon in degrees)
@@ -92,6 +95,9 @@ A popular format for encoding geographic features using JSON. Easy to read and w
 ### Geometry
 The shape of a geographic feature: point, line (or polyline), polygon, or collections of these.
 
+### Geofence
+A virtual boundary around a geographic area used to trigger actions when a device enters or exits the zone. Common in asset tracking and location-based services.
+
 ### Geolocation
 Determining the geographic position of a device, typically using GPS or network-based methods.
 
@@ -120,6 +126,9 @@ A grid of hexagonal cells used to aggregate point data for visualization.
 
 ### Intersect
 A spatial operation that finds areas where two features overlap.
+
+### Isochrone
+A line or polygon connecting points of equal travel time from a given location. Used to show service areas or accessibility. For example, a 10-minute drive-time isochrone shows all areas reachable within 10 minutes.
 
 ---
 
@@ -215,6 +224,9 @@ Converting coordinates into an address or place name. The opposite of geocoding.
 
 ### Scale
 The ratio between distance on the map and distance in the real world. A scale of 1:10,000 means 1 cm on the map equals 10,000 cm (100 m) in reality.
+
+### Service Area
+A geographic region representing the area that can be reached from a location within a specified time or distance. Used in logistics, urban planning, and accessibility analysis. Also called a catchment area.
 
 ### Scale Bar
 A visual indicator on the map showing distance at the current zoom level.

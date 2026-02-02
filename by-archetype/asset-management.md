@@ -149,6 +149,14 @@ These stories add advanced capabilities:
 ### Compliance
 - [CMP-003](../by-category/19-compliance.md#cmp-003-data-governance): Data Governance
 
+### Geoprocessing
+- [GPR-001](../by-category/22-geoprocessing.md#gpr-001-buffer-features): Buffer Features
+
+### Print
+- [PRT-001](../by-category/23-print-cartography.md#prt-001-configure-print-layout-template): Configure Print Layout Template
+- [PRT-002](../by-category/23-print-cartography.md#prt-002-add-map-elements-title-legend-scale-bar-north-arrow): Add Map Elements
+- [PRT-003](../by-category/23-print-cartography.md#prt-003-print-to-specific-paper-sizeorientation): Print to Paper Size
+
 ## Not Typically Needed
 
 These stories may not be relevant for asset management:

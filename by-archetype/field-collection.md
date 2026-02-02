@@ -89,6 +89,10 @@ These stories significantly improve field collection workflows:
 - [SRC-001](../by-category/08-search-geocoding.md#src-001-search-by-addressplace): Search by Address/Place
 - [SRC-003](../by-category/08-search-geocoding.md#src-003-reverse-geocode-click-to-address): Reverse Geocode
 
+### Routing
+- [RTE-001](../by-category/20-routing.md#rte-001-calculate-route-between-points): Calculate Route Between Points
+- [RTE-002](../by-category/20-routing.md#rte-002-display-turn-by-turn-directions): Display Turn-by-Turn Directions
+
 ### Controls
 - [CTL-006](../by-category/09-controls-ui.md#ctl-006-display-compassnorth-arrow): Display Compass
 
@@ -134,6 +138,11 @@ These stories add advanced capabilities:
 
 ### Compliance
 - [CMP-002](../by-category/19-compliance.md#cmp-002-privacy-compliance): Privacy Compliance
+
+### Geofencing
+- [GEO-001](../by-category/21-geofencing.md#geo-001-create-geofence-zone): Create Geofence Zone
+- [GEO-002](../by-category/21-geofencing.md#geo-002-monitor-geofence-entryexit): Monitor Geofence Entry/Exit
+- [GEO-003](../by-category/21-geofencing.md#geo-003-trigger-notifications-on-geofence-events): Trigger Notifications on Geofence Events
 
 ## Not Typically Needed
 
