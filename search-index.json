@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "NAV-001",
+    "title": "Pan the Map",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want to pan/drag the map to move the view, so that I can explore different areas.",
+    "content": "Pan the Map As a map user, I want to pan/drag the map to move the view, so that I can explore different areas. User can click and drag to move the map view Map movement follows cursor/touch position smoothly Cursor changes to indicate draggable state (grab/grabbing) _[Customize: Define edge behavior - stop at extent or wrap?]_ Touch/swipe panning for mobile devices Keyboard arrow key panning for accessibility Kinetic/momentum scrolling for fluid UX Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "NAV-002",
+    "title": "Zoom with Mouse Wheel",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want to zoom in and out using my mouse wheel, so that I can quickly adjust the map scale.",
+    "content": "Zoom with Mouse Wheel As a map user, I want to zoom in and out using my mouse wheel, so that I can quickly adjust the map scale. Scrolling mouse wheel up zooms in, down zooms out Zoom is centered on the cursor position Zoom transitions are smooth (animated) Zoom respects minimum and maximum zoom levels _[Customize: Define min/max zoom levels]_ Scroll wheel zoom with Ctrl key modifier only (to avoid accidental zooming) Discrete zoom levels vs. continuous zoom Reverse scroll direction option Public User, Viewer, Contributor, Analyst All"
+  },
+  {
+    "id": "NAV-003",
+    "title": "Zoom with Double-Click/Tap",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want to double-click or double-tap to zoom in, so that I can quickly focus on a specific area.",
+    "content": "Zoom with Double-Click/Tap As a map user, I want to double-click or double-tap to zoom in, so that I can quickly focus on a specific area. Double-click zooms in one level, centered on click location Double-tap zooms in one level on touch devices Shift+double-click zooms out one level Zoom animation is smooth _[Customize: Number of zoom levels per double-click]_ Triple-click to zoom out Double-tap with two fingers to zoom out Disable on touch to avoid conflicts with other gestures Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "NAV-004",
+    "title": "Zoom with Pinch Gesture",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a mobile user, I want to pinch to zoom in and out, so that I can navigate the map with familiar touch gestures.",
+    "content": "Zoom with Pinch Gesture As a mobile user, I want to pinch to zoom in and out, so that I can navigate the map with familiar touch gestures. Pinch-out (spread fingers) zooms in Pinch-in (bring fingers together) zooms out Zoom is centered between the two touch points Zoom level changes proportionally to finger distance _[Customize: Define zoom sensitivity]_ Pinch + rotate combination gesture Pinch + pan combination (common on mobile) Restrict to map element only (not full page) Public User, Viewer, Contributor, Field Worker All"
+  },
+  {
+    "id": "NAV-005",
+    "title": "Rotate the Map",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to rotate the map view, so that I can orient it to match my physical surroundings or analysis needs.",
+    "content": "Rotate the Map As a map user, I want to rotate the map view, so that I can orient it to match my physical surroundings or analysis needs. User can rotate the map using Alt+Shift+drag On touch devices, two-finger rotation gesture works Rotation indicator shows current bearing User can click rotation indicator to reset to north _[Customize: Enable/disable rotation for this application]_ Auto-rotate to match device compass heading Rotation locked to 45-degree increments Rotation disabled for certain map types (e.g., floor plans) Contributor, Analyst, Field Worker Field Collection, Analysis Tool, Asset Management"
+  },
+  {
+    "id": "NAV-006",
+    "title": "Reset View",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to reset the map to its initial view, so that I can return to the default extent after exploring.",
+    "content": "Reset View As a map user, I want to reset the map to its initial view, so that I can return to the default extent after exploring. A \"reset view\" or \"home\" button is available Clicking the button returns to the initial map extent If rotation was enabled, resets rotation to north-up If initial zoom/center was defined, restores those values _[Customize: Define the \"home\" extent]_ Animated transition to home view Reset to user's last saved view instead of default Keyboard shortcut (e.g., Home key) Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "NAV-007",
+    "title": "Kinetic Panning (Momentum)",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Enhanced",
+    "effort": "Small",
+    "userStory": "As a map user, I want the map to continue moving with momentum after I release a pan gesture, so that navigation feels smooth and natural.",
+    "content": "Kinetic Panning (Momentum) As a map user, I want the map to continue moving with momentum after I release a pan gesture, so that navigation feels smooth and natural. Map continues moving after pan gesture ends (drag release) Movement speed decays naturally (easing) User can interrupt momentum by touching/clicking the map Momentum respects extent constraints (no flying off the edge) _[Customize: Define momentum decay rate]_ Disable kinetic panning for precision applications Adjustable momentum sensitivity Different decay curves (linear, exponential) Public User, Viewer, Field Worker Public Portal, Data Viewer, Field Collection"
+  },
+  {
+    "id": "LAY-001",
+    "title": "Toggle Layer Visibility",
+    "category": "Layer Management",
+    "categorySlug": "layer-management",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want to turn layers on and off, so that I can focus on the information I need.",
+    "content": "Toggle Layer Visibility As a map user, I want to turn layers on and off, so that I can focus on the information I need. Layer panel/list displays all available layers Each layer has a visibility toggle (checkbox or eye icon) Layer visibility changes immediately when toggled Layer state is visually indicated (checked/unchecked, visible/hidden icon) _[Customize: Should layer visibility persist between sessions?]_ Toggle layer groups (folders) on/off \"Solo\" mode to show only one layer at a time Quick toggle all layers on/off Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "LAY-002",
+    "title": "Adjust Layer Opacity",
+    "category": "Layer Management",
+    "categorySlug": "layer-management",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to adjust layer transparency, so that I can see through layers to compare or combine information.",
+    "content": "Adjust Layer Opacity As a map user, I want to adjust layer transparency, so that I can see through layers to compare or combine information. Each layer has an opacity slider (0% to 100%) Opacity changes are applied in real-time as the slider moves Current opacity value is displayed numerically Default opacity is 100% (fully opaque) _[Customize: Should specific layers have different default opacities?]_ Preset opacity levels (25%, 50%, 75%, 100%) Opacity for layer groups Keyboard input for precise opacity values Viewer, Contributor, Analyst Analysis Tool, Data Viewer, Asset Management"
+  },
+  {
+    "id": "LAY-003",
+    "title": "Reorder Layers",
+    "category": "Layer Management",
+    "categorySlug": "layer-management",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to change the drawing order of layers, so that I can control which layers appear on top.",
+    "content": "Reorder Layers As a map user, I want to change the drawing order of layers, so that I can control which layers appear on top. User can drag layers up and down in the layer list Layer at the top of the list is drawn on top of the map Visual feedback during drag (placeholder, ghost, insertion indicator) Layer order updates immediately when dropped _[Customize: Should certain layers be \"locked\" in position?]_ Move to top/bottom buttons instead of drag Numbered layer order with input fields Separate ordering for basemaps vs. overlays Viewer, Contributor, Analyst, Administrator Analysis Tool, Data Viewer, Collaborative Editor"
+  },
+  {
+    "id": "LAY-004",
+    "title": "Compare Layers with Swipe/Split",
+    "category": "Layer Management",
+    "categorySlug": "layer-management",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to compare two layers side-by-side or with a swipe tool, so that I can see changes or differences between datasets.",
+    "content": "Compare Layers with Swipe/Split As an analyst, I want to compare two layers side-by-side or with a swipe tool, so that I can see changes or differences between datasets. User can select two layers for comparison Swipe mode: draggable divider reveals one layer on each side Swipe position can be adjusted by dragging Current comparison mode is clearly indicated User can exit comparison mode to return to normal view _[Customize: Split mode (side-by-side) in addition to swipe?]_ Vertical swipe (left/right reveal) Horizontal swipe (top/bottom reveal) Split view with synchronized panning Flicker mode (rapidly alternate between layers) Analyst, Contributor Analysis Tool, Data Viewer"
+  },
+  {
+    "id": "LAY-005",
+    "title": "Display Minimap/Overview",
+    "category": "Layer Management",
+    "categorySlug": "layer-management",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see a minimap showing my current view within the larger area, so that I maintain context while zoomed in.",
+    "content": "Display Minimap/Overview As a map user, I want to see a minimap showing my current view within the larger area, so that I maintain context while zoomed in. Small overview map appears in a corner of the main map Overview shows a wider extent than the main map A rectangle or box indicates the current main map extent User can click on the overview to navigate the main map _[Customize: Position and size of overview map]_ Collapsible/expandable overview Different basemap in overview (simplified) Overview shows different layers than main map Public User, Viewer, Analyst Public Portal, Data Viewer, Analysis Tool"
+  },
+  {
+    "id": "DIS-001",
+    "title": "Display Basemap",
+    "category": "Data Display",
+    "categorySlug": "data-display",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see a background map providing geographic context, so that I can understand the location of features.",
+    "content": "Display Basemap As a map user, I want to see a background map providing geographic context, so that I can understand the location of features. Map displays a basemap layer (e.g., streets, satellite, terrain) Basemap covers the entire map extent without gaps Basemap loads progressively as tiles are fetched Appropriate attribution is displayed for the basemap source _[Customize: Select default basemap type]_ Street map (OSM, Google Maps, Mapbox Streets) Satellite/aerial imagery Terrain/topographic Light/dark themes for different contexts Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "DIS-002",
+    "title": "Switch Between Basemaps",
+    "category": "Data Display",
+    "categorySlug": "data-display",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to switch between different basemap styles, so that I can choose the view most suitable for my task.",
+    "content": "Switch Between Basemaps As a map user, I want to switch between different basemap styles, so that I can choose the view most suitable for my task. Basemap switcher control is accessible in the UI At least two basemap options are available Switching basemaps preserves current zoom and center Selected basemap is visually indicated _[Customize: Define available basemap options]_ Thumbnail gallery of basemap options Dropdown selector Toggle button (street/satellite) Basemap in layer panel Public User, Viewer, Analyst Public Portal, Analysis Tool, Data Viewer"
+  },
+  {
+    "id": "DIS-003",
+    "title": "Display Vector Features",
+    "category": "Data Display",
+    "categorySlug": "data-display",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to see points, lines, and polygons on the map, so that I can view geographic features and data.",
+    "content": "Display Vector Features As a map user, I want to see points, lines, and polygons on the map, so that I can view geographic features and data. Point features are displayed with appropriate markers/symbols Line features are displayed with appropriate stroke styles Polygon features are displayed with fill and stroke Features are rendered at appropriate zoom levels _[Customize: Define symbology for each feature type]_ Simple colored shapes Styled by attributes (categorical or graduated) Custom icons/symbols Labeled features Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "DIS-004",
+    "title": "Display Heatmap",
+    "category": "Data Display",
+    "categorySlug": "data-display",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to see point data as a heatmap, so that I can identify patterns and density without individual points.",
+    "content": "Display Heatmap As an analyst, I want to see point data as a heatmap, so that I can identify patterns and density without individual points. Point data is rendered as a continuous color gradient High-density areas show \"hot\" colors (red/orange) Low-density areas show \"cool\" colors (blue/green) or transparency Heatmap updates dynamically when data or view changes _[Customize: Color scheme and intensity thresholds]_ Weight by attribute (not just point count) Adjustable radius/blur Intensity scale control Toggle between heatmap and individual points Analyst, Viewer Analysis Tool, Data Viewer, Public Portal"
+  },
+  {
+    "id": "DIS-005",
+    "title": "Display Clustered Points",
+    "category": "Data Display",
+    "categorySlug": "data-display",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want nearby points to be grouped into clusters, so that the map remains readable when many points are visible.",
+    "content": "Display Clustered Points As a map user, I want nearby points to be grouped into clusters, so that the map remains readable when many points are visible. Points within a threshold distance are combined into a single cluster symbol Cluster symbol displays the count of grouped points Clusters expand/separate when zooming in Clicking a cluster zooms in to expand it _[Customize: Cluster distance threshold and styling]_ Pie chart clusters showing category breakdown Animated cluster transitions Click to show list of features in cluster Spider/spiderfied clusters for overlapping points Public User, Viewer, Analyst All"
+  },
+  {
+    "id": "DIS-006",
+    "title": "Display Graticule/Grid",
+    "category": "Data Display",
+    "categorySlug": "data-display",
+    "tier": "Specialized",
+    "effort": "Small",
+    "userStory": "As an analyst, I want to see latitude/longitude grid lines on the map, so that I can reference coordinates visually.",
+    "content": "Display Graticule/Grid As an analyst, I want to see latitude/longitude grid lines on the map, so that I can reference coordinates visually. Grid lines display at regular coordinate intervals Intervals adjust appropriately with zoom level Coordinate labels appear on grid lines or map edges Graticule can be toggled on/off _[Customize: Grid interval and styling]_ Graticule in different coordinate systems Only show at certain zoom levels Customizable grid color and line style Show only labels without grid lines Analyst, Viewer Analysis Tool, Data Viewer"
+  },
+  {
+    "id": "DIS-007",
+    "title": "Display Temporal Data",
+    "category": "Data Display",
+    "categorySlug": "data-display",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an analyst, I want to view data across time with animation or a time slider, so that I can see how patterns change over time.",
+    "content": "Display Temporal Data As an analyst, I want to view data across time with animation or a time slider, so that I can see how patterns change over time. Time slider control allows selecting a date/time or range Map displays only features matching the selected time Play/pause controls animate through time Current time position is displayed _[Customize: Time range and granularity]_ Time range selection (start and end) Animated playback with speed control Cumulative display (show all data up to selected time) Time-aware styling (fade older features) Analyst, Viewer Analysis Tool, Data Viewer"
+  },
+  {
+    "id": "INT-001",
+    "title": "Click to Select Feature",
+    "category": "Feature Interaction",
+    "categorySlug": "feature-interaction",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want to click on a feature to select it, so that I can view its details or perform actions on it.",
+    "content": "Click to Select Feature As a map user, I want to click on a feature to select it, so that I can view its details or perform actions on it. Clicking a feature selects it Selected feature is visually highlighted (different color, outline, or style) Only one feature is selected at a time (unless multi-select enabled) Clicking empty space or another feature deselects the current selection _[Customize: Selection styling and behavior]_ Multi-select with Shift+click or Ctrl+click Select multiple overlapping features (choose from list) Selection triggers sidebar panel instead of popup Select and zoom to feature Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "INT-002",
+    "title": "Box Select Multiple Features",
+    "category": "Feature Interaction",
+    "categorySlug": "feature-interaction",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to draw a box to select multiple features at once, so that I can perform bulk operations efficiently.",
+    "content": "Box Select Multiple Features As an analyst, I want to draw a box to select multiple features at once, so that I can perform bulk operations efficiently. User can draw a rectangle by clicking and dragging All features within or intersecting the rectangle are selected Selection rectangle is visually displayed while drawing Modifier key (Shift or Ctrl) adds to existing selection _[Customize: Select features within or intersecting the box?]_ Polygon/lasso select for irregular shapes Circle select (click and drag radius) Add to or remove from selection with modifiers Select across multiple layers Contributor, Analyst Analysis Tool, Collaborative Editor, Asset Management"
+  },
+  {
+    "id": "INT-003",
+    "title": "Hover to Highlight Feature",
+    "category": "Feature Interaction",
+    "categorySlug": "feature-interaction",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want features to highlight when I hover over them, so that I can preview what I'm about to select.",
+    "content": "Hover to Highlight Feature As a map user, I want features to highlight when I hover over them, so that I can preview what I'm about to select. Feature styling changes when the cursor hovers over it Hover highlight is distinct from selection highlight Highlight is removed when cursor moves away Cursor changes to indicate the feature is interactive _[Customize: Hover styling and enabled layers]_ Show brief tooltip on hover Highlight related features (same category) Disabled on touch devices (no hover) Hover only on specific layers Public User, Viewer, Analyst Public Portal, Data Viewer, Analysis Tool"
+  },
+  {
+    "id": "INT-004",
+    "title": "Display Feature Popup",
+    "category": "Feature Interaction",
+    "categorySlug": "feature-interaction",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to see a popup with feature information when I select it, so that I can view attribute details.",
+    "content": "Display Feature Popup As a map user, I want to see a popup with feature information when I select it, so that I can view attribute details. Popup appears near the selected feature Popup displays relevant attribute information Popup has a close button or closes when clicking elsewhere Popup position adjusts to stay within the viewport _[Customize: Popup content template and fields to display]_ Popup on hover instead of click Sidebar panel instead of floating popup Paginated popup for multiple selected features Popup with action buttons (edit, delete, share) Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "INT-005",
+    "title": "Filter Features by Attribute",
+    "category": "Feature Interaction",
+    "categorySlug": "feature-interaction",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to filter which features are displayed based on their attributes, so that I can focus on relevant data.",
+    "content": "Filter Features by Attribute As a map user, I want to filter which features are displayed based on their attributes, so that I can focus on relevant data. Filter controls are available for configured attributes Changing a filter immediately updates the visible features Active filters are clearly indicated User can clear filters to show all features _[Customize: Which attributes are filterable and filter types]_ Dropdown/select for categorical attributes Slider for numeric ranges Text search for string attributes Date range picker for temporal data Multiple filters combined with AND/OR logic Public User, Viewer, Analyst Public Portal, Analysis Tool, Data Viewer, Asset Management"
+  },
+  {
+    "id": "DRW-001",
+    "title": "Draw Point Feature",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a contributor, I want to place a point on the map by clicking, so that I can mark a specific location.",
+    "content": "Draw Point Feature As a contributor, I want to place a point on the map by clicking, so that I can mark a specific location. User can activate point drawing mode Clicking on the map places a point at that location Placed point is immediately visible with appropriate styling User can exit drawing mode when finished _[Customize: Point styling and required attributes]_ Single point then exit mode vs. continuous point placement Point placement with immediate attribute form GPS-assisted point placement (use current location) Snapping to existing features or grid Contributor, Field Worker, Analyst Field Collection, Collaborative Editor, Asset Management"
+  },
+  {
+    "id": "DRW-002",
+    "title": "Draw Line Feature",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to draw a line by clicking a series of points, so that I can represent linear features like roads or paths.",
+    "content": "Draw Line Feature As a contributor, I want to draw a line by clicking a series of points, so that I can represent linear features like roads or paths. User can activate line drawing mode Each click adds a vertex to the line Line segments display between vertices as they're added Double-click or Enter key completes the line Escape key cancels the current line _[Customize: Minimum vertices and line styling]_ Freehand drawing (continuous path while dragging) Snapping to existing vertices or features Undo last vertex while drawing Show distance as drawing progresses Contributor, Field Worker, Analyst Field Collection, Collaborative Editor, Asset Management"
+  },
+  {
+    "id": "DRW-003",
+    "title": "Draw Polygon Feature",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to draw a polygon by clicking vertices, so that I can represent area features like parcels or zones.",
+    "content": "Draw Polygon Feature As a contributor, I want to draw a polygon by clicking vertices, so that I can represent area features like parcels or zones. User can activate polygon drawing mode Each click adds a vertex to the polygon Polygon preview shows the shape closing back to the first vertex Double-click or Enter key completes the polygon Polygon must have at least 3 vertices to be valid _[Customize: Polygon styling and area display]_ Freehand polygon drawing Rectangle tool (two corners) Show area as drawing progresses Hole creation for donuts/complex polygons Contributor, Field Worker, Analyst Field Collection, Collaborative Editor, Asset Management, Analysis Tool"
+  },
+  {
+    "id": "DRW-004",
+    "title": "Draw Circle Feature",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a contributor, I want to draw a circle by specifying center and radius, so that I can represent circular areas or buffers.",
+    "content": "Draw Circle Feature As a contributor, I want to draw a circle by specifying center and radius, so that I can represent circular areas or buffers. User can activate circle drawing mode First click sets the center point Dragging or second click sets the radius Circle preview shows current size with radius displayed Circle can be stored as polygon (approximated) or true circle _[Customize: Circle representation and radius units]_ Enter radius numerically instead of drawing Click center, then drag to set radius Ellipse drawing (two radii) Geodetic vs. planar circle calculation Contributor, Analyst Analysis Tool, Asset Management"
+  },
+  {
+    "id": "DRW-005",
+    "title": "Freehand Drawing",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to draw by dragging my finger or cursor continuously, so that I can sketch organic shapes quickly.",
+    "content": "Freehand Drawing As a contributor, I want to draw by dragging my finger or cursor continuously, so that I can sketch organic shapes quickly. User can activate freehand drawing mode Dragging creates a continuous line following the cursor/finger Releasing the drag completes the shape Lines can be drawn as open paths Polygons can be closed by returning near the start point _[Customize: Simplification tolerance]_ Automatic simplification of drawn path Smoothing algorithm for cleaner curves Choose between line and polygon mode before drawing Pressure sensitivity (if supported by device) Contributor, Field Worker Field Collection, Collaborative Editor"
+  },
+  {
+    "id": "DRW-006",
+    "title": "Edit Feature Geometry",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to edit the shape of an existing feature, so that I can correct or update its geometry.",
+    "content": "Edit Feature Geometry As a contributor, I want to edit the shape of an existing feature, so that I can correct or update its geometry. User can select a feature to enter edit mode Vertices are displayed and can be dragged to new positions Midpoint handles allow adding new vertices Vertices can be deleted (context menu or Delete key) Changes can be saved or cancelled _[Customize: Edit permissions and validation]_ Reshape entire feature by dragging edges Rotate or scale feature as a whole Split feature into multiple parts Merge multiple features into one Contributor, Field Worker, Administrator Field Collection, Collaborative Editor, Asset Management"
+  },
+  {
+    "id": "DRW-007",
+    "title": "Move Feature",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a contributor, I want to move a feature to a new location, so that I can correct its position.",
+    "content": "Move Feature As a contributor, I want to move a feature to a new location, so that I can correct its position. User can select a feature to move Dragging the feature moves the entire geometry Feature preview shows position while dragging Release confirms the new position Escape cancels the move _[Customize: Move snap settings]_ Move by entering coordinate offset Move multiple selected features together Snap to other features while moving Copy and move (duplicate) Contributor, Field Worker Field Collection, Collaborative Editor, Asset Management"
+  },
+  {
+    "id": "DRW-008",
+    "title": "Delete Feature",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a contributor, I want to delete a feature from the map, so that I can remove incorrect or obsolete data.",
+    "content": "Delete Feature As a contributor, I want to delete a feature from the map, so that I can remove incorrect or obsolete data. User can select a feature to delete Delete action is available (button, context menu, or Delete key) Confirmation prompt before deletion (if configured) Feature is removed from the map immediately Deletion can be undone (if undo is available) _[Customize: Confirmation requirement and soft delete]_ Soft delete (mark as deleted, don't remove) Bulk delete of multiple selected features Delete with reason/comment Admin-only delete for certain feature types Contributor, Field Worker, Administrator Field Collection, Collaborative Editor, Asset Management"
+  },
+  {
+    "id": "DRW-009",
+    "title": "Snap to Features",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want new vertices to snap to existing features, so that I can create accurate, connected geometries.",
+    "content": "Snap to Features As a contributor, I want new vertices to snap to existing features, so that I can create accurate, connected geometries. When drawing near an existing vertex, cursor snaps to it When drawing near an edge, cursor snaps to the nearest point on that edge Visual indicator shows when snapping is active Snapping can be toggled on/off _[Customize: Snap tolerance and layer priority]_ Snap to grid instead of/in addition to features Snap to specific layers only Different snap modes (vertex, edge, intersection) Keyboard modifier to temporarily disable snapping Contributor, Analyst Collaborative Editor, Asset Management, Analysis Tool"
+  },
+  {
+    "id": "MEA-001",
+    "title": "Measure Distance",
+    "category": "Measurement",
+    "categorySlug": "measurement",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to measure the distance between points on the map, so that I can understand real-world distances.",
+    "content": "Measure Distance As a map user, I want to measure the distance between points on the map, so that I can understand real-world distances. User can activate distance measurement mode Clicking on the map adds measurement points Line segments are drawn between consecutive points Running total distance is displayed as points are added Double-click or Enter completes the measurement Measurement can be cleared to start over _[Customize: Distance units and precision]_ Single segment measurement (point to point) Multi-point path measurement Geodetic (great circle) vs. planar calculation Measure along existing feature geometry Public User, Viewer, Analyst, Field Worker Public Portal, Analysis Tool, Field Collection, Asset Management"
+  },
+  {
+    "id": "MEA-002",
+    "title": "Measure Area",
+    "category": "Measurement",
+    "categorySlug": "measurement",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to measure the area of a region on the map, so that I can calculate land size or coverage.",
+    "content": "Measure Area As an analyst, I want to measure the area of a region on the map, so that I can calculate land size or coverage. User can activate area measurement mode Clicking on the map adds vertices of a polygon Polygon preview shows the measured area Area value updates in real-time as vertices are added/moved Double-click or Enter completes the measurement Perimeter is also displayed alongside area _[Customize: Area units and precision]_ Rectangle area measurement (two corners) Circle area measurement (center and radius) Measure existing polygon feature Geodetic vs. planar area calculation Analyst, Contributor, Field Worker Analysis Tool, Field Collection, Asset Management"
+  },
+  {
+    "id": "MEA-003",
+    "title": "Live Measurement Display",
+    "category": "Measurement",
+    "categorySlug": "measurement",
+    "tier": "Enhanced",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see distance/area update in real-time as I move my cursor, so that I can find exact measurements interactively.",
+    "content": "Live Measurement Display As a map user, I want to see distance/area update in real-time as I move my cursor, so that I can find exact measurements interactively. While measuring, moving the cursor updates the projected measurement For distance: shows what the total would be if clicked at current position For area: shows what the area would be if polygon closed at current position Measurement label follows the cursor or appears at a fixed location Updates are smooth and do not lag behind cursor movement _[Customize: Label position and format]_ Tooltip following cursor vs. fixed panel display Show both segment length and total length Include bearing/direction for distance measurement Elevation profile for distance (if terrain data available) Analyst, Contributor, Field Worker Field Collection, Analysis Tool, Asset Management"
+  },
+  {
+    "id": "LOC-001",
+    "title": "Show My Location",
+    "category": "Location Services",
+    "categorySlug": "location-services",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see my current location on the map, so that I can orient myself relative to map features.",
+    "content": "Show My Location As a map user, I want to see my current location on the map, so that I can orient myself relative to map features. \"Locate me\" button is available in the map UI Clicking the button requests the user's location (prompts for permission if needed) User's location is displayed with a distinctive marker Accuracy circle shows the uncertainty radius Map centers on the user's location _[Customize: Location marker styling and accuracy display]_ Auto-locate on map load (with permission) Location indicator without centering Show location accuracy as text Different markers for GPS vs. network location Public User, Viewer, Field Worker Public Portal, Field Collection, Asset Management"
+  },
+  {
+    "id": "LOC-002",
+    "title": "Track My Location",
+    "category": "Location Services",
+    "categorySlug": "location-services",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a field worker, I want the map to continuously update my location, so that I can navigate and collect data while moving.",
+    "content": "Track My Location As a field worker, I want the map to continuously update my location, so that I can navigate and collect data while moving. User can enable continuous location tracking Location marker updates automatically as user moves Tracking indicator shows when tracking is active User can toggle tracking on/off Battery usage warning is provided (for mobile) _[Customize: Update frequency and accuracy settings]_ Track and record path (breadcrumb trail) Auto-pan map to follow location High-accuracy mode for precision work Background tracking (when app is minimized) Field Worker, Contributor Field Collection"
+  },
+  {
+    "id": "LOC-003",
+    "title": "Center Map on My Location",
+    "category": "Location Services",
+    "categorySlug": "location-services",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to quickly center the map on my current location, so that I can see nearby features.",
+    "content": "Center Map on My Location As a map user, I want to quickly center the map on my current location, so that I can see nearby features. Clicking the locate button centers the map on user's location If already centered, clicking again may increase zoom Animation smoothly transitions to the new center Works with both single location request and continuous tracking _[Customize: Zoom level when centering]_ Center without changing zoom level Center and zoom to a specific level \"Follow me\" mode that keeps user centered Center on location with rotation to heading Public User, Field Worker Public Portal, Field Collection, Asset Management"
+  },
+  {
+    "id": "LOC-004",
+    "title": "Show Location Accuracy",
+    "category": "Location Services",
+    "categorySlug": "location-services",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a field worker, I want to see the accuracy of my GPS location, so that I can ensure data quality.",
+    "content": "Show Location Accuracy As a field worker, I want to see the accuracy of my GPS location, so that I can ensure data quality. Accuracy circle surrounds the location marker Circle radius represents the uncertainty in meters Accuracy value is displayed numerically (optional) Visual indicator changes color based on accuracy quality _[Customize: Accuracy thresholds and display]_ Numeric accuracy display in a panel Color-coded accuracy (green=good, yellow=fair, red=poor) Block data collection if accuracy is below threshold Show both horizontal and vertical accuracy Field Worker, Analyst Field Collection, Analysis Tool"
+  },
+  {
+    "id": "SRC-001",
+    "title": "Search by Address/Place",
+    "category": "Search & Geocoding",
+    "categorySlug": "search-geocoding",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to search for a place or address and go to that location, so that I can quickly navigate to points of interest.",
+    "content": "Search by Address/Place As a map user, I want to search for a place or address and go to that location, so that I can quickly navigate to points of interest. Search box is prominently displayed in the UI User can type an address, place name, or landmark Autocomplete suggestions appear as user types Selecting a result zooms and centers the map on that location Result location is marked on the map _[Customize: Geocoding provider and search scope]_ Search within current map extent only Search filtered by category (restaurants, parks, etc.) Recent searches/favorites Search multiple geocoding providers Public User, Viewer, Field Worker Public Portal, Field Collection, Asset Management"
+  },
+  {
+    "id": "SRC-002",
+    "title": "Search by Coordinates",
+    "category": "Search & Geocoding",
+    "categorySlug": "search-geocoding",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As an analyst, I want to navigate to a specific coordinate location, so that I can find exact positions.",
+    "content": "Search by Coordinates As an analyst, I want to navigate to a specific coordinate location, so that I can find exact positions. User can enter coordinates in the search box or a dedicated field Multiple coordinate formats are supported (decimal degrees, DMS) Entering valid coordinates centers the map on that location A marker is placed at the coordinate location Invalid coordinate format shows a helpful error message _[Customize: Supported coordinate formats]_ Separate latitude and longitude input fields Coordinate format dropdown selector Paste coordinates from clipboard Support for different coordinate reference systems Analyst, Field Worker Analysis Tool, Field Collection"
+  },
+  {
+    "id": "SRC-003",
+    "title": "Reverse Geocode (Click to Address)",
+    "category": "Search & Geocoding",
+    "categorySlug": "search-geocoding",
+    "tier": "Enhanced",
+    "effort": "Small",
+    "userStory": "As a map user, I want to click on the map and see the address of that location, so that I can identify places without knowing their address.",
+    "content": "Reverse Geocode (Click to Address) As a map user, I want to click on the map and see the address of that location, so that I can identify places without knowing their address. User can activate a \"What's here?\" or reverse geocode tool Clicking on the map retrieves the address for that point Address is displayed in a popup or panel Coordinates of the clicked point are also shown User can copy the address or coordinates _[Customize: Reverse geocoding provider and detail level]_ Right-click context menu option Long-press on touch devices Show multiple address candidates Include what3words or other location codes Public User, Field Worker, Analyst Public Portal, Field Collection, Analysis Tool"
+  },
+  {
+    "id": "CTL-001",
+    "title": "Display Zoom Buttons",
+    "category": "Controls & UI",
+    "categorySlug": "controls-ui",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want visible zoom in/out buttons, so that I can control the map zoom level without using gestures.",
+    "content": "Display Zoom Buttons As a map user, I want visible zoom in/out buttons, so that I can control the map zoom level without using gestures. Zoom in (+) and zoom out (-) buttons are visible on the map Clicking zoom in increases the zoom level by one Clicking zoom out decreases the zoom level by one Buttons are disabled at min/max zoom levels Buttons have appropriate hover and active states _[Customize: Button position and styling]_ Zoom slider instead of/in addition to buttons Zoom to specific level selector Animated vs. instant zoom transitions Custom button icons Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "CTL-002",
+    "title": "Display Scale Bar",
+    "category": "Controls & UI",
+    "categorySlug": "controls-ui",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see a scale bar, so that I can understand the real-world distances on the map.",
+    "content": "Display Scale Bar As a map user, I want to see a scale bar, so that I can understand the real-world distances on the map. Scale bar is displayed in a corner of the map Scale bar updates as zoom level changes Scale shows distance in appropriate units (m, km, ft, mi) Scale bar length adjusts to show round numbers _[Customize: Units and position]_ Dual scale (metric and imperial) Numeric scale ratio (1:10,000) Custom styling/colors Hide at certain zoom levels Public User, Viewer, Analyst, Field Worker All"
+  },
+  {
+    "id": "CTL-003",
+    "title": "Display Coordinates",
+    "category": "Controls & UI",
+    "categorySlug": "controls-ui",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As an analyst, I want to see the coordinates of my cursor position, so that I can identify precise locations.",
+    "content": "Display Coordinates As an analyst, I want to see the coordinates of my cursor position, so that I can identify precise locations. Coordinate display shows the current cursor/pointer position Coordinates update in real-time as the cursor moves Coordinates are displayed in a consistent format User can copy coordinates to clipboard _[Customize: Coordinate format and display location]_ Toggle between different coordinate formats (DD, DMS, UTM) Show map center coordinates instead of cursor Click to copy coordinates Show elevation if terrain data available Analyst, Field Worker, Contributor Analysis Tool, Field Collection, Asset Management"
+  },
+  {
+    "id": "CTL-004",
+    "title": "Display Attribution",
+    "category": "Controls & UI",
+    "categorySlug": "controls-ui",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map operator, I need to display proper attribution for map data sources, so that I comply with licensing requirements.",
+    "content": "Display Attribution As a map operator, I need to display proper attribution for map data sources, so that I comply with licensing requirements. Attribution text is visible on the map Attribution updates when layer sources change Attribution links are clickable Attribution can be collapsed/expanded if lengthy _[Customize: Attribution text and styling]_ Collapsible attribution panel Attribution in popup/modal instead of on-map Logo-based attribution for branded sources Custom attribution text Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "CTL-005",
+    "title": "Fullscreen Mode",
+    "category": "Controls & UI",
+    "categorySlug": "controls-ui",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to view the map in fullscreen mode, so that I can maximize my viewing area.",
+    "content": "Fullscreen Mode As a map user, I want to view the map in fullscreen mode, so that I can maximize my viewing area. Fullscreen button is visible on the map Clicking the button enters fullscreen mode Map fills the entire screen in fullscreen mode Exit fullscreen button or Escape key returns to normal view All controls remain functional in fullscreen _[Customize: Fullscreen behavior and button position]_ Toggle between fullscreen and embedded view Hide certain UI elements in fullscreen Persist fullscreen preference Keyboard shortcut (F11 fallback) Public User, Viewer, Analyst Public Portal, Data Viewer, Analysis Tool"
+  },
+  {
+    "id": "CTL-006",
+    "title": "Display Compass/North Arrow",
+    "category": "Controls & UI",
+    "categorySlug": "controls-ui",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see a compass showing north, so that I know the map's orientation.",
+    "content": "Display Compass/North Arrow As a map user, I want to see a compass showing north, so that I know the map's orientation. Compass/north arrow is displayed on the map Compass rotates when map is rotated Clicking the compass resets rotation to north-up Compass is hidden when map is north-up (optional) _[Customize: Compass styling and visibility]_ Always visible vs. only when rotated Simple north arrow vs. full compass rose Show bearing in degrees Custom compass icon Viewer, Analyst, Field Worker Field Collection, Analysis Tool, Public Portal"
+  },
+  {
+    "id": "IMP-001",
+    "title": "Import Data File",
+    "category": "Import & Export",
+    "categorySlug": "import-export",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to import geographic data from a file, so that I can visualize my own data on the map.",
+    "content": "Import Data File As an analyst, I want to import geographic data from a file, so that I can visualize my own data on the map. Import button/option is available in the UI User can select a file from their device Supported formats are clearly indicated Imported data is displayed as a new layer on the map Map zooms to the extent of imported data Errors in file parsing are reported clearly _[Customize: Supported file formats]_ Drag-and-drop import (see IMP-002) Import from URL instead of file Import as temporary layer vs. saved layer Batch import multiple files Contributor, Analyst Analysis Tool, Data Viewer, Collaborative Editor"
+  },
+  {
+    "id": "IMP-002",
+    "title": "Drag and Drop Import",
+    "category": "Import & Export",
+    "categorySlug": "import-export",
+    "tier": "Enhanced",
+    "effort": "Small",
+    "userStory": "As an analyst, I want to drag a file onto the map to import it, so that I can quickly add data without navigating dialogs.",
+    "content": "Drag and Drop Import As an analyst, I want to drag a file onto the map to import it, so that I can quickly add data without navigating dialogs. Dragging a file over the map shows a drop zone indicator Dropping a supported file imports and displays the data Dropping an unsupported file shows an error message Multiple files can be dropped at once (if supported) _[Customize: Drop zone styling and behavior]_ Drop zone covers entire map vs. specific area Preview file contents before confirming import Drop zone only active in certain modes Contributor, Analyst Analysis Tool, Data Viewer"
+  },
+  {
+    "id": "IMP-003",
+    "title": "Export Map as Image",
+    "category": "Import & Export",
+    "categorySlug": "import-export",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to export the current map view as an image, so that I can include it in reports or presentations.",
+    "content": "Export Map as Image As a map user, I want to export the current map view as an image, so that I can include it in reports or presentations. Export button is available in the UI User can export the current map view as PNG or JPEG Exported image includes visible layers and basemap User can choose to include/exclude certain controls or legends Export quality/resolution can be selected _[Customize: Default format and options]_ Include legend in export Include north arrow and scale bar High-resolution export (2x, 4x) Export specific extent (not just current view) Public User, Viewer, Analyst Public Portal, Data Viewer, Analysis Tool"
+  },
+  {
+    "id": "IMP-004",
+    "title": "Export Map as PDF",
+    "category": "Import & Export",
+    "categorySlug": "import-export",
+    "tier": "Enhanced",
+    "effort": "Large",
+    "userStory": "As an analyst, I want to export the map as a PDF document, so that I can create professional printable maps.",
+    "content": "Export Map as PDF As an analyst, I want to export the map as a PDF document, so that I can create professional printable maps. PDF export option is available User can select page size and orientation Map is rendered at print-quality resolution Title, legend, scale bar, and attribution can be included User can add custom text or annotations _[Customize: PDF template and options]_ Pre-defined print templates Multi-page PDF for large extents Include data table with features Add company branding/logo Analyst, Contributor Analysis Tool, Asset Management"
+  },
+  {
+    "id": "IMP-005",
+    "title": "Generate Permalink/Share URL",
+    "category": "Import & Export",
+    "categorySlug": "import-export",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to generate a URL that captures my current map view, so that I can share it with others or bookmark it.",
+    "content": "Generate Permalink/Share URL As a map user, I want to generate a URL that captures my current map view, so that I can share it with others or bookmark it. Share button is available in the UI Generated URL includes current center, zoom, and rotation URL includes visible layer states (optional) Opening the URL restores the map to the shared state User can copy the URL to clipboard _[Customize: What state is captured in the URL]_ Short URL vs. full parameter URL Include selected feature in URL Include filter states QR code generation for mobile sharing Public User, Viewer, Analyst Public Portal, Data Viewer, Analysis Tool"
+  },
+  {
+    "id": "STY-001",
+    "title": "Style by Attribute (Categorical)",
+    "category": "Styling",
+    "categorySlug": "styling",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want features to be styled based on category values, so that I can visually distinguish different types of data.",
+    "content": "Style by Attribute (Categorical) As an analyst, I want features to be styled based on category values, so that I can visually distinguish different types of data. Features are colored/styled based on an attribute value Each unique category value has a distinct color/style Legend displays the category-to-style mapping User can customize the style for each category Null/missing values have a default style _[Customize: Attributes available for styling and color palettes]_ Pre-defined color palettes User-defined custom colors Style by multiple attributes (size and color) Icon variation by category (for points) Analyst, Viewer Analysis Tool, Data Viewer, Asset Management"
+  },
+  {
+    "id": "STY-002",
+    "title": "Display Custom Icons/Symbols",
+    "category": "Styling",
+    "categorySlug": "styling",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As an administrator, I want to use custom icons for point features, so that they are recognizable and match our visual standards.",
+    "content": "Display Custom Icons/Symbols As an administrator, I want to use custom icons for point features, so that they are recognizable and match our visual standards. Point features can display custom icon images Icons can be SVG or raster images Icon size and anchor point can be configured Icons can be assigned based on attribute values Icon library is available for common symbols _[Customize: Available icons and assignment rules]_ Upload custom icons Icon sizing based on attribute value Animated icons (for status indicators) Icon clustering with representative icon Contributor, Analyst, Administrator Asset Management, Public Portal, Field Collection"
+  },
+  {
+    "id": "STY-003",
+    "title": "Display Feature Labels",
+    "category": "Styling",
+    "categorySlug": "styling",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want features to display text labels, so that I can identify them without clicking.",
+    "content": "Display Feature Labels As a map user, I want features to display text labels, so that I can identify them without clicking. Point, line, and polygon features can display labels Labels show a configured attribute value (e.g., name) Label placement avoids overlapping other labels Labels appear at appropriate zoom levels Label styling (font, size, color) can be configured _[Customize: Label attributes and styling]_ Labels on hover only Curved labels along lines Callout labels with leader lines Multi-line labels with multiple attributes Public User, Viewer, Analyst All"
+  },
+  {
+    "id": "STY-004",
+    "title": "Apply Color Ramp (Graduated)",
+    "category": "Styling",
+    "categorySlug": "styling",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want features to be colored along a gradient based on numeric values, so that I can visualize magnitude or intensity.",
+    "content": "Apply Color Ramp (Graduated) As an analyst, I want features to be colored along a gradient based on numeric values, so that I can visualize magnitude or intensity. Numeric attribute values map to positions on a color ramp Color ramp is displayed in a legend with value ranges User can select from predefined color ramps Min/max values can be configured or auto-detected Classification method can be selected (equal interval, quantile, etc.) _[Customize: Available color ramps and classification methods]_ Diverging color ramps (for values around a midpoint) User-defined class breaks Continuous vs. stepped colors Size graduation in addition to color Analyst, Viewer Analysis Tool, Data Viewer"
+  },
+  {
+    "id": "PRJ-001",
+    "title": "Display Coordinates in Multiple Formats",
+    "category": "Projections & Coordinates",
+    "categorySlug": "projections",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As an analyst, I want to view coordinates in different formats, so that I can work with various coordinate conventions.",
+    "content": "Display Coordinates in Multiple Formats As an analyst, I want to view coordinates in different formats, so that I can work with various coordinate conventions. Coordinates can be displayed in decimal degrees (DD) Coordinates can be displayed in degrees-minutes-seconds (DMS) User can toggle between formats Selected format is persisted for the session Format applies to all coordinate displays in the application _[Customize: Available coordinate formats]_ UTM coordinates MGRS (Military Grid Reference System) Local grid systems Custom coordinate format Analyst, Field Worker Analysis Tool, Field Collection"
+  },
+  {
+    "id": "PRJ-002",
+    "title": "Transform Coordinates Between Systems",
+    "category": "Projections & Coordinates",
+    "categorySlug": "projections",
+    "tier": "Specialized",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to convert coordinates from one system to another, so that I can integrate data from different sources.",
+    "content": "Transform Coordinates Between Systems As an analyst, I want to convert coordinates from one system to another, so that I can integrate data from different sources. User can select source and target coordinate reference systems Coordinates can be entered manually for transformation Transformed coordinates are displayed and can be copied Feature data can be transformed/reprojected Common CRS options are readily available _[Customize: Supported coordinate reference systems]_ Batch transform multiple coordinates Transform imported file data Show transformation on map preview Calculate transformation error/accuracy Analyst, Contributor Analysis Tool, Field Collection"
+  },
+  {
+    "id": "PRJ-003",
+    "title": "Display Map in Different Projections",
+    "category": "Projections & Coordinates",
+    "categorySlug": "projections",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an analyst, I want to view the map in different projections, so that I can work with regional coordinate systems or specialized views.",
+    "content": "Display Map in Different Projections As an analyst, I want to view the map in different projections, so that I can work with regional coordinate systems or specialized views. User can select the map projection from available options Map redraws in the selected projection All layers are correctly transformed Scale and measurement tools adjust for the projection User is informed of any projection limitations _[Customize: Available projections]_ Quick toggle between common projections Save projection preference per map/project Show projection comparison view Warn about projection distortion Analyst Analysis Tool, Data Viewer"
+  },
+  {
+    "id": "ACC-001",
+    "title": "Keyboard Navigation",
+    "category": "Accessibility",
+    "categorySlug": "accessibility",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a keyboard user, I want to navigate and control the map without a mouse, so that I can use the application fully.",
+    "content": "Keyboard Navigation As a keyboard user, I want to navigate and control the map without a mouse, so that I can use the application fully. All interactive elements are reachable via Tab key Focus order follows a logical sequence Focus indicator is clearly visible on all elements Map can be panned using arrow keys Map can be zoomed using +/- keys Escape key cancels current operation _[Customize: Custom keyboard shortcuts]_ Keyboard shortcut reference panel Customizable keyboard shortcuts Focus trapping for modal dialogs Skip links to main map content Public User, Viewer, Contributor, Analyst All"
+  },
+  {
+    "id": "ACC-002",
+    "title": "Screen Reader Support",
+    "category": "Accessibility",
+    "categorySlug": "accessibility",
+    "tier": "Standard",
+    "effort": "Large",
+    "userStory": "As a screen reader user, I want the map to provide meaningful information, so that I can understand the map content.",
+    "content": "Screen Reader Support As a screen reader user, I want the map to provide meaningful information, so that I can understand the map content. Map has an accessible name and description (ARIA) Interactive controls have proper ARIA labels State changes are announced (e.g., \"Zoomed to level 12\") Feature information can be accessed and read aloud Error messages are announced _[Customize: Verbosity level and announcement triggers]_ Feature summary when map loads Audio cues for map events Tabular alternative view for feature data Sonification of map data Public User, Viewer Public Portal, Data Viewer"
+  },
+  {
+    "id": "ACC-003",
+    "title": "High Contrast Mode",
+    "category": "Accessibility",
+    "categorySlug": "accessibility",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a user with visual impairments, I want a high-contrast map display, so that I can see features clearly.",
+    "content": "High Contrast Mode As a user with visual impairments, I want a high-contrast map display, so that I can see features clearly. High-contrast mode toggle is available UI controls meet WCAG contrast requirements (4.5:1 minimum) Map features have sufficient contrast against the basemap Text remains readable in high-contrast mode Mode preference is persisted _[Customize: High contrast color scheme]_ Multiple contrast themes (light high-contrast, dark high-contrast) Respect system high-contrast preference Outline-only mode for features Increased line widths and font sizes Public User, Viewer, Field Worker All"
+  },
+  {
+    "id": "DAT-001",
+    "title": "Upload Data",
+    "category": "Data Management",
+    "categorySlug": "data-management",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to upload geographic data to the system, so that it can be stored, shared, and used by others.",
+    "content": "Upload Data As a contributor, I want to upload geographic data to the system, so that it can be stored, shared, and used by others. User can upload files through a form interface Supported formats are validated on upload Upload progress is displayed for large files Uploaded data is parsed and stored correctly User receives confirmation of successful upload Errors are reported with specific details _[Customize: File size limits and supported formats]_ Chunked upload for very large files Background upload with notification Metadata entry during upload Validation rules for uploaded data Contributor, Analyst, Administrator Field Collection, Collaborative Editor, Analysis Tool"
+  },
+  {
+    "id": "DAT-002",
+    "title": "Indicate Data Freshness",
+    "category": "Data Management",
+    "categorySlug": "data-management",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a data consumer, I want to know when the data was last updated, so that I can trust its accuracy and relevance.",
+    "content": "Indicate Data Freshness As a data consumer, I want to know when the data was last updated, so that I can trust its accuracy and relevance. Last updated timestamp is displayed for each layer Timestamp shows date and time (in user's timezone) Stale data (older than threshold) is visually indicated User can see update history (if available) Data source metadata is accessible _[Customize: Staleness thresholds and display location]_ Automatic refresh when data updates Badge/icon for recently updated layers Push notifications for data updates Changelog or version history view Viewer, Analyst, Administrator Data Viewer, Analysis Tool, Asset Management"
+  },
+  {
+    "id": "DAT-003",
+    "title": "Download Data",
+    "category": "Data Management",
+    "categorySlug": "data-management",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to download map data to a file, so that I can use it in other applications or archive it.",
+    "content": "Download Data As an analyst, I want to download map data to a file, so that I can use it in other applications or archive it. Download option is available for layers User can select the download format User can filter which features to download Download includes attribute data Large downloads show progress _[Customize: Available download formats and filters]_ Download current view extent only Download selected features only Include related data (joined tables) Schedule recurring exports Analyst, Contributor Analysis Tool, Data Viewer, Asset Management"
+  },
+  {
+    "id": "DAT-004",
+    "title": "Data Versioning",
+    "category": "Data Management",
+    "categorySlug": "data-management",
+    "tier": "Specialized",
+    "effort": "X-Large",
+    "userStory": "As an administrator, I want to track changes to data over time, so that I can audit edits and restore previous versions if needed.",
+    "content": "Data Versioning As an administrator, I want to track changes to data over time, so that I can audit edits and restore previous versions if needed. All feature edits are logged with timestamp and user Users can view the edit history for a feature Previous versions of features can be viewed Administrators can restore a feature to a previous version Changes can be compared between versions _[Customize: Retention policy and version depth]_ Visual diff between versions (on map) Bulk restore of dataset to point in time Branching/forking for parallel editing Approval workflow for changes Analyst, Administrator Collaborative Editor, Asset Management"
+  },
+  {
+    "id": "ITG-001",
+    "title": "Share Map View",
+    "category": "Integration",
+    "categorySlug": "integration",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to share my current map view with others, so that they can see exactly what I'm looking at.",
+    "content": "Share Map View As a map user, I want to share my current map view with others, so that they can see exactly what I'm looking at. Share button is prominently displayed Clicking share generates a shareable link User can copy the link to clipboard with one click Social sharing options are available (email, Twitter, Facebook) Shared link opens the same map view for recipients _[Customize: Social platforms and share options]_ QR code generation for mobile sharing Embed code for websites (see ITG-002) Share via native mobile share sheet Preview of shared content before sharing Public User, Viewer, Analyst Public Portal, Data Viewer, Analysis Tool"
+  },
+  {
+    "id": "ITG-002",
+    "title": "Embed Map in Website",
+    "category": "Integration",
+    "categorySlug": "integration",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a website administrator, I want to embed the map in my website, so that visitors can interact with it directly.",
+    "content": "Embed Map in Website As a website administrator, I want to embed the map in my website, so that visitors can interact with it directly. Embed code (iframe) can be generated User can customize embed size User can select which controls to show in embedded view Embedded map works on third-party websites Embed code can be copied with one click _[Customize: Allowed domains and embed options]_ Responsive embed (adjusts to container) Static snapshot embed (image) Limit features in embedded view Custom styling for embedded maps Administrator, Analyst Public Portal, Data Viewer"
+  },
+  {
+    "id": "ITG-003",
+    "title": "Authenticate Users",
+    "category": "Integration",
+    "categorySlug": "integration",
+    "tier": "Standard",
+    "effort": "Large",
+    "userStory": "As a user, I want to log in to the application, so that I can access features and data according to my permissions.",
+    "content": "Authenticate Users As a user, I want to log in to the application, so that I can access features and data according to my permissions. Login form accepts username/email and password User receives appropriate error messages for failed login Successful login redirects to the application Session persists until logout or timeout Logout option is available _[Customize: Authentication method and session duration]_ Social login (Google, Microsoft, GitHub) Single Sign-On (SSO) integration Multi-factor authentication (MFA) Passwordless login (magic link) Viewer, Contributor, Analyst, Field Worker, Administrator All (except fully public)"
+  },
+  {
+    "id": "ITG-004",
+    "title": "Access via API",
+    "category": "Integration",
+    "categorySlug": "integration",
+    "tier": "Specialized",
+    "effort": "X-Large",
+    "userStory": "As a developer, I want to access map data via an API, so that I can integrate it with other systems.",
+    "content": "Access via API As a developer, I want to access map data via an API, so that I can integrate it with other systems. RESTful API endpoints are available for data access API authentication (API key or OAuth) is supported Documentation describes available endpoints and parameters Standard data formats are supported (GeoJSON, JSON) Rate limiting prevents abuse _[Customize: Available endpoints and authentication method]_ GraphQL API in addition to REST Real-time data streaming (WebSockets) Webhooks for change notifications Bulk data export endpoints Analyst, Administrator Integration, Analysis Tool"
+  },
+  {
+    "id": "ADM-001",
+    "title": "Configure Layer Settings",
+    "category": "Administration",
+    "categorySlug": "administration",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As an administrator, I want to configure layer properties, so that I can control how data is displayed to users.",
+    "content": "Configure Layer Settings As an administrator, I want to configure layer properties, so that I can control how data is displayed to users. Admin interface allows selecting and editing layers Layer name and description can be modified Default visibility and opacity can be set Zoom range (visible scales) can be defined Symbology and styling rules can be configured Changes take effect immediately or on publish _[Customize: Which properties are configurable]_ Version/draft layers before publishing Preview changes before applying Copy layer configuration from another layer Configure popup templates for layers Administrator All"
+  },
+  {
+    "id": "ADM-002",
+    "title": "Manage User Permissions",
+    "category": "Administration",
+    "categorySlug": "administration",
+    "tier": "Standard",
+    "effort": "Large",
+    "userStory": "As an administrator, I want to manage user roles and permissions, so that I can control who can access and modify data.",
+    "content": "Manage User Permissions As an administrator, I want to manage user roles and permissions, so that I can control who can access and modify data. Admin can create, edit, and delete user accounts Role-based permissions can be assigned to users Roles define access to features, layers, and operations Permission changes take effect immediately Audit log tracks permission changes _[Customize: Permission model and roles]_ Group-based permissions Layer-level access control Feature-level access control Temporary or time-limited access Administrator All (multi-user systems)"
+  },
+  {
+    "id": "ADM-003",
+    "title": "Customize Branding",
+    "category": "Administration",
+    "categorySlug": "administration",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As an administrator, I want to customize the application branding, so that it matches our organization's identity.",
+    "content": "Customize Branding As an administrator, I want to customize the application branding, so that it matches our organization's identity. Logo can be uploaded and displayed in the header Primary and accent colors can be customized Application title and favicon can be changed Custom CSS can be applied (if needed) Changes take effect without code deployment _[Customize: Which elements are customizable]_ Multiple themes/brands for different contexts Dark mode option Custom fonts Login page branding Administrator All"
+  },
+  {
+    "id": "ADM-004",
+    "title": "Set Default Map Configuration",
+    "category": "Administration",
+    "categorySlug": "administration",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As an administrator, I want to configure the default map view, so that users see the most relevant area and layers on load.",
+    "content": "Set Default Map Configuration As an administrator, I want to configure the default map view, so that users see the most relevant area and layers on load. Default center and zoom level can be set Default visible layers can be configured Default basemap can be selected Settings apply to new users/sessions Users can override defaults in their session _[Customize: Which defaults are configurable]_ Different defaults for different user roles Save user preferences Reset to defaults option for users Geographic extent constraint Administrator All"
+  },
+  {
+    "id": "PRF-001",
+    "title": "Fast Initial Load",
+    "category": "Performance",
+    "categorySlug": "performance",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a map user, I want the map to load quickly, so that I can start working without delay.",
+    "content": "Fast Initial Load As a map user, I want the map to load quickly, so that I can start working without delay. Map is interactive within 3 seconds on broadband connection Critical resources load first (basemap, essential layers) Progress indicator shows while loading Non-critical content loads progressively Performance is acceptable on slower connections _[Customize: Performance targets for different network conditions]_ Skeleton/placeholder UI while loading Prioritized loading of visible extent Lazy loading of off-screen layers Pre-rendered static tiles for instant display Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "PRF-002",
+    "title": "Offline Capability",
+    "category": "Performance",
+    "categorySlug": "performance",
+    "tier": "Enhanced",
+    "effort": "X-Large",
+    "userStory": "As a field worker, I want to use the map offline, so that I can work in areas without network connectivity.",
+    "content": "Offline Capability As a field worker, I want to use the map offline, so that I can work in areas without network connectivity. User can download map areas for offline use Downloaded areas show basemap tiles and vector data User can view and query features while offline Edits made offline are saved locally When online, local edits sync to the server _[Customize: Storage limits and sync behavior]_ Automatic caching of visited areas Scheduled background sync Conflict resolution for offline edits Selective layer download Field Worker Field Collection"
+  },
+  {
+    "id": "PRF-003",
+    "title": "Display Loading Indicators",
+    "category": "Performance",
+    "categorySlug": "performance",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see loading progress, so that I know when data is being fetched and when it's ready.",
+    "content": "Display Loading Indicators As a map user, I want to see loading progress, so that I know when data is being fetched and when it's ready. Loading indicator appears when data is being fetched Indicator shows progress when possible (percentage or bar) Indicator is visible but not obtrusive Indicator disappears promptly when loading completes Tile loading progress is shown for basemaps _[Customize: Indicator style and position]_ Spinner vs. progress bar Per-layer loading indicators Fade effect on loading tiles Network status indicator Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "PRF-004",
+    "title": "Cache Data Efficiently",
+    "category": "Performance",
+    "categorySlug": "performance",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want previously loaded data to be cached, so that returning to an area is fast.",
+    "content": "Cache Data Efficiently As a map user, I want previously loaded data to be cached, so that returning to an area is fast. Viewed map tiles are cached in browser Cached tiles are reused when returning to an area Vector data is cached appropriately Cache is invalidated when data updates Cache size is managed to avoid excessive storage use _[Customize: Cache duration and size limits]_ Service Worker for advanced caching Cache headers for HTTP caching IndexedDB for vector data User-controlled cache clearing Public User, Viewer, Analyst, Field Worker All"
+  },
+  {
+    "id": "ERR-001",
+    "title": "Display User-Friendly Error Messages",
+    "category": "Error Handling",
+    "categorySlug": "error-handling",
+    "tier": "Foundation",
+    "effort": "Small",
+    "userStory": "As a map user, I want clear error messages when something goes wrong, so that I understand what happened and what to do next.",
+    "content": "Display User-Friendly Error Messages As a map user, I want clear error messages when something goes wrong, so that I understand what happened and what to do next. Error messages are displayed in plain language (not technical jargon) Messages explain what went wrong and suggest remedies Errors appear in a visible but non-blocking manner Errors can be dismissed by the user Critical errors are distinguished from warnings _[Customize: Error message tone and detail level]_ Toast/snackbar notifications vs. modal dialogs Error icon on affected layers/elements Expandable technical details for support Contact support link in error messages Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
+    "id": "ERR-002",
+    "title": "Retry Failed Operations",
+    "category": "Error Handling",
+    "categorySlug": "error-handling",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to retry failed operations, so that I don't lose my work due to temporary issues.",
+    "content": "Retry Failed Operations As a contributor, I want to retry failed operations, so that I don't lose my work due to temporary issues. Failed operations show a \"Retry\" option Retry attempts the same operation with the same data Multiple retry attempts are limited to prevent loops Background retry is attempted automatically for transient failures User is notified of retry status _[Customize: Retry limits and delay settings]_ Automatic retry with exponential backoff Manual retry only Queue failed operations for batch retry Retry with user modifications Contributor, Field Worker Field Collection, Collaborative Editor"
+  },
+  {
+    "id": "ERR-003",
+    "title": "Auto-Save Drafts",
+    "category": "Error Handling",
+    "categorySlug": "error-handling",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want my work to be automatically saved as a draft, so that I don't lose unsaved changes if something goes wrong.",
+    "content": "Auto-Save Drafts As a contributor, I want my work to be automatically saved as a draft, so that I don't lose unsaved changes if something goes wrong. Edits are automatically saved to local storage periodically Draft indicator shows when unsaved changes exist On return, user is prompted to restore draft Drafts are cleared when changes are successfully saved Multiple drafts can be managed (if applicable) _[Customize: Auto-save interval and storage limit]_ Continuous auto-save vs. periodic Server-side draft storage Draft versioning (multiple save points) Discard draft option Contributor, Field Worker, Analyst Field Collection, Collaborative Editor, Analysis Tool"
+  },
+  {
+    "id": "ERR-004",
+    "title": "Graceful Degradation",
+    "category": "Error Handling",
+    "categorySlug": "error-handling",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want the application to remain usable even when some components fail, so that I can continue working.",
+    "content": "Graceful Degradation As a map user, I want the application to remain usable even when some components fail, so that I can continue working. Failure of one layer doesn't crash the entire application Failed layers show an error indicator but don't block others Core functionality remains available when non-essential features fail User is informed about degraded functionality Recovery is attempted automatically when possible _[Customize: Which components are essential vs. optional]_ Fallback to cached data when server is unavailable Alternative basemap if primary fails Read-only mode when editing service is down Static map fallback for total failure Public User, Viewer, Field Worker Public Portal, Field Collection"
+  },
+  {
+    "id": "CMP-001",
+    "title": "WCAG Accessibility Compliance",
+    "category": "Compliance",
+    "categorySlug": "compliance",
+    "tier": "Foundation",
+    "effort": "Large",
+    "userStory": "As a product owner, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users.",
+    "content": "WCAG Accessibility Compliance As a product owner, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users. All pages pass automated WCAG 2.1 AA testing Manual accessibility audit confirms compliance Keyboard navigation is fully functional Screen reader navigation is effective Color contrast meets minimum ratios (4.5:1 text, 3:1 UI) Accessibility statement is published _[Customize: WCAG level and additional requirements]_ WCAG 2.1 AAA compliance Section 508 compliance (US federal) EN 301 549 compliance (EU) Organization-specific accessibility standards Public User, Viewer, Contributor, Analyst All"
+  },
+  {
+    "id": "CMP-002",
+    "title": "Privacy Compliance",
+    "category": "Compliance",
+    "categorySlug": "compliance",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a product owner, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues.",
+    "content": "Privacy Compliance As a product owner, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues. Privacy policy is published and linked from the application User consent is obtained before collecting personal data Users can request their data (data subject access request) Users can request deletion of their data Data collection is limited to what's necessary Location data handling complies with regulations _[Customize: Applicable privacy regulations]_ GDPR compliance (EU) CCPA compliance (California) PIPEDA compliance (Canada) Cookie consent management Administrator All"
+  },
+  {
+    "id": "CMP-003",
+    "title": "Data Governance",
+    "category": "Compliance",
+    "categorySlug": "compliance",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an administrator, I need data governance controls, so that we maintain data quality, security, and regulatory compliance.",
+    "content": "Data Governance As an administrator, I need data governance controls, so that we maintain data quality, security, and regulatory compliance. Data classification system identifies sensitive data Access controls limit who can view/edit sensitive data Audit logs track all data access and modifications Data retention policies are enforced Data lineage/provenance is tracked Compliance reports can be generated _[Customize: Governance policies and classifications]_ Automated data classification Data quality scoring Compliance dashboards Third-party compliance integrations Administrator Asset Management, Collaborative Editor, Analysis Tool"
+  },
+  {
+    "id": "RTE-001",
+    "title": "Calculate Route Between Points",
+    "category": "Routing & Directions",
+    "categorySlug": "routing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to calculate a route between two or more locations, so that I can see the path and distance for travel planning.",
+    "content": "Calculate Route Between Points As a map user, I want to calculate a route between two or more locations, so that I can see the path and distance for travel planning. User can specify an origin point (click, search, or current location) User can specify a destination point (click, search, or address) Route is calculated and displayed on the map as a line Route summary shows total distance and estimated travel time Route updates if origin or destination changes _[Customize: Define routing provider/service to use]_ Multiple transportation modes (driving, walking, cycling, transit) Real-time traffic consideration Avoid specific road types or areas Alternative routes display Public User, Viewer, Field Worker, Analyst Field Collection, Public Portal, Analysis Tool"
+  },
+  {
+    "id": "RTE-002",
+    "title": "Display Turn-by-Turn Directions",
+    "category": "Routing & Directions",
+    "categorySlug": "routing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to see turn-by-turn directions for my route, so that I can follow step-by-step navigation instructions.",
+    "content": "Display Turn-by-Turn Directions As a map user, I want to see turn-by-turn directions for my route, so that I can follow step-by-step navigation instructions. Directions panel shows ordered list of navigation steps Each step includes instruction text (e.g., \"Turn right onto Main St\") Distance and/or time shown for each segment Clicking a step highlights that segment on the map Current step is highlighted during navigation _[Customize: Define instruction detail level]_ Voice-read directions for hands-free navigation Compact vs. detailed instruction views Printable direction sheets Maneuver icons (turn arrows, merge symbols) Public User, Viewer, Field Worker Field Collection, Public Portal"
+  },
+  {
+    "id": "RTE-003",
+    "title": "Add Route Waypoints/Stops",
+    "category": "Routing & Directions",
+    "categorySlug": "routing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to add intermediate stops to my route, so that I can plan a multi-stop journey.",
+    "content": "Add Route Waypoints/Stops As a map user, I want to add intermediate stops to my route, so that I can plan a multi-stop journey. User can add waypoints between origin and destination Waypoints can be added by clicking map or entering address Route recalculates to include all waypoints in order User can reorder waypoints by dragging User can remove individual waypoints _[Customize: Define maximum number of waypoints]_ Optimize waypoint order for shortest total route Named waypoints (e.g., \"Lunch stop\") Time windows for each stop Different transportation mode between segments Public User, Field Worker, Analyst Field Collection, Analysis Tool"
+  },
+  {
+    "id": "RTE-004",
+    "title": "Set Route Preferences",
+    "category": "Routing & Directions",
+    "categorySlug": "routing",
+    "tier": "Enhanced",
+    "effort": "Small",
+    "userStory": "As a map user, I want to set route preferences like avoiding tolls or highways, so that I can customize my route to my travel needs.",
+    "content": "Set Route Preferences As a map user, I want to set route preferences like avoiding tolls or highways, so that I can customize my route to my travel needs. User can select route optimization (fastest, shortest, most economical) User can toggle avoidances (tolls, highways, ferries, unpaved roads) Route recalculates when preferences change Preferences are saved for the session or user profile _[Customize: Define available preference options]_ Vehicle-specific preferences (truck height/weight restrictions) Accessibility preferences (wheelchair accessible routes) Scenic route option Carbon footprint optimization Public User, Field Worker Field Collection, Public Portal"
+  },
+  {
+    "id": "RTE-005",
+    "title": "Calculate Service Areas/Isochrones",
+    "category": "Routing & Directions",
+    "categorySlug": "routing",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an analyst, I want to generate service area polygons based on travel time or distance, so that I can analyze accessibility and coverage.",
+    "content": "Calculate Service Areas/Isochrones As an analyst, I want to generate service area polygons based on travel time or distance, so that I can analyze accessibility and coverage. User can select a center point for the service area User can specify time intervals (e.g., 5, 10, 15 minutes) or distance bands Isochrone polygons are generated and displayed on the map Multiple intervals shown as concentric polygons with different colors User can export isochrone polygons as GeoJSON _[Customize: Define maximum time/distance and intervals]_ Reverse isochrones (areas that can reach a point) Multiple origin points for combined service areas Different transportation modes Contour lines vs. filled polygons Analyst Analysis Tool"
+  },
+  {
+    "id": "GEO-001",
+    "title": "Create Geofence Zone",
+    "category": "Geofencing",
+    "categorySlug": "geofencing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an administrator, I want to create geofence zones on the map, so that I can define areas for location-based monitoring.",
+    "content": "Create Geofence Zone As an administrator, I want to create geofence zones on the map, so that I can define areas for location-based monitoring. User can draw a polygon to define a geofence boundary User can draw a circle with a specified radius as a geofence Geofence can be named and given a description Geofence is saved and persists across sessions Geofence boundaries are displayed on the map with distinct styling _[Customize: Define maximum geofence size/complexity]_ Import geofence boundaries from GeoJSON or KML Predefined geofence shapes (administrative boundaries) Buffer around existing features to create geofences Time-based geofences (active only during certain hours) Administrator, Analyst, Contributor Field Collection, Asset Management"
+  },
+  {
+    "id": "GEO-002",
+    "title": "Monitor Geofence Entry/Exit",
+    "category": "Geofencing",
+    "categorySlug": "geofencing",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an administrator, I want to monitor when tracked devices or users enter or exit geofence zones, so that I can trigger appropriate responses.",
+    "content": "Monitor Geofence Entry/Exit As an administrator, I want to monitor when tracked devices or users enter or exit geofence zones, so that I can trigger appropriate responses. System continuously checks device position against geofence boundaries Entry event is triggered when device crosses into a geofence Exit event is triggered when device leaves a geofence Events include timestamp, device ID, and geofence ID Dwell time is calculated for time spent inside a geofence _[Customize: Define monitoring frequency and accuracy threshold]_ Batch position updates vs. real-time monitoring Buffer zone to prevent rapid entry/exit flickering Direction-aware triggers (entering from specific direction) Multiple simultaneous geofence monitoring Administrator, Analyst Field Collection, Asset Management"
+  },
+  {
+    "id": "GEO-003",
+    "title": "Trigger Notifications on Geofence Events",
+    "category": "Geofencing",
+    "categorySlug": "geofencing",
+    "tier": "Specialized",
+    "effort": "Medium",
+    "userStory": "As an administrator, I want to receive notifications when geofence events occur, so that I can respond to location-based triggers.",
+    "content": "Trigger Notifications on Geofence Events As an administrator, I want to receive notifications when geofence events occur, so that I can respond to location-based triggers. User can configure notification preferences per geofence Notifications can be sent via push notification, email, or SMS Notification message can be customized with event details User can enable/disable notifications per geofence Notification history is logged and viewable _[Customize: Define notification channels available]_ In-app real-time alerts Webhook integration for external systems Escalation rules (notify manager if no response) Aggregated digest notifications instead of individual alerts Administrator, Viewer Field Collection, Asset Management"
+  },
+  {
+    "id": "GEO-004",
+    "title": "Manage Geofence Rules and Actions",
+    "category": "Geofencing",
+    "categorySlug": "geofencing",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an administrator, I want to define rules and automated actions for geofence events, so that the system can respond automatically to location triggers.",
+    "content": "Manage Geofence Rules and Actions As an administrator, I want to define rules and automated actions for geofence events, so that the system can respond automatically to location triggers. User can create rules linking geofence events to actions Rules can have conditions (time of day, user role, event type) Available actions include: send notification, update record, call webhook Rules can be enabled, disabled, or scheduled Rule execution is logged with success/failure status _[Customize: Define available actions and conditions]_ Complex rule chains (if A then B, else C) Rate limiting to prevent action flooding Test mode to simulate rules without executing Templates for common rule patterns Administrator Asset Management"
+  },
+  {
+    "id": "GPR-001",
+    "title": "Buffer Features",
+    "category": "Geoprocessing",
+    "categorySlug": "geoprocessing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to create buffer zones around selected features, so that I can analyze proximity and define impact areas.",
+    "content": "Buffer Features As an analyst, I want to create buffer zones around selected features, so that I can analyze proximity and define impact areas. User can select one or more features to buffer User can specify buffer distance in appropriate units (meters, feet, miles, km) Buffer polygons are generated and displayed on the map User can choose to dissolve overlapping buffers or keep separate Buffer results can be exported or used for further analysis _[Customize: Define maximum buffer distance and units]_ Variable buffer distance based on feature attribute Negative buffers (shrink polygons) Multi-ring buffers at different distances One-sided buffers for linear features Analyst, Contributor Analysis Tool, Asset Management"
+  },
+  {
+    "id": "GPR-002",
+    "title": "Intersect/Clip Layers",
+    "category": "Geoprocessing",
+    "categorySlug": "geoprocessing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to intersect or clip layers, so that I can extract features that fall within a specific boundary.",
+    "content": "Intersect/Clip Layers As an analyst, I want to intersect or clip layers, so that I can extract features that fall within a specific boundary. User can select an input layer and a clip/intersect layer Intersect operation returns geometry and attributes from both layers Clip operation cuts input features to boundary of clip layer Result layer is displayed on the map User can export results as GeoJSON or other formats _[Customize: Define supported geometry type combinations]_ Difference operation (subtract one layer from another) Symmetric difference (areas unique to each layer) Identity operation (split features at boundaries) Attribute transfer options Analyst Analysis Tool"
+  },
+  {
+    "id": "GPR-003",
+    "title": "Union/Merge Features",
+    "category": "Geoprocessing",
+    "categorySlug": "geoprocessing",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to merge or union selected features, so that I can combine multiple geometries into a single feature.",
+    "content": "Union/Merge Features As an analyst, I want to merge or union selected features, so that I can combine multiple geometries into a single feature. User can select multiple features of the same geometry type Union operation combines geometries into a single multipart feature Dissolve option merges based on common attribute value User can choose how to handle attributes (keep first, sum, average) Result feature is displayed and can be saved _[Customize: Define attribute aggregation rules]_ Dissolve by attribute (merge features with same category) Explode multipart results back to single parts Aggregation statistics for numeric attributes Merge features across different layers Analyst, Contributor Analysis Tool"
+  },
+  {
+    "id": "GPR-004",
+    "title": "Spatial Join (Point in Polygon, Nearest)",
+    "category": "Geoprocessing",
+    "categorySlug": "geoprocessing",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an analyst, I want to perform spatial joins between layers, so that I can transfer attributes based on spatial relationships.",
+    "content": "Spatial Join (Point in Polygon, Nearest) As an analyst, I want to perform spatial joins between layers, so that I can transfer attributes based on spatial relationships. User can select a target layer and a join layer Point-in-polygon join attaches polygon attributes to contained points Nearest neighbor join attaches attributes from closest feature User can select which attributes to transfer Results include a join count or distance field _[Customize: Define spatial relationship types supported]_ One-to-many joins (point inherits from multiple overlapping polygons) Within distance joins Touches, overlaps, crosses relationships Summarize joined attributes (count, sum, average) Analyst Analysis Tool"
+  },
+  {
+    "id": "GPR-005",
+    "title": "Calculate Statistics by Area",
+    "category": "Geoprocessing",
+    "categorySlug": "geoprocessing",
+    "tier": "Specialized",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to calculate summary statistics for features within an area, so that I can analyze patterns and distributions.",
+    "content": "Calculate Statistics by Area As an analyst, I want to calculate summary statistics for features within an area, so that I can analyze patterns and distributions. User can select or draw an analysis area System counts features within the area Numeric attributes are summarized (sum, average, min, max, std dev) Results are displayed in a panel or popup User can export statistics as CSV or JSON _[Customize: Define statistics to calculate]_ Statistics by category within area Comparison between multiple areas Time-series statistics for temporal data Density calculations (features per square km) Analyst Analysis Tool"
+  },
+  {
+    "id": "PRT-001",
+    "title": "Configure Print Layout Template",
+    "category": "Print & Cartography",
+    "categorySlug": "print-cartography",
+    "tier": "Enhanced",
+    "effort": "Large",
+    "userStory": "As an analyst, I want to configure a print layout template, so that I can create professional map outputs with consistent branding.",
+    "content": "Configure Print Layout Template As an analyst, I want to configure a print layout template, so that I can create professional map outputs with consistent branding. User can select from predefined layout templates Template includes placeholders for map, title, legend, and other elements User can customize template colors and fonts to match branding Templates can be saved for reuse Preview shows how the final output will appear _[Customize: Define available template types]_ WYSIWYG layout editor for custom templates Multiple map frames on a single layout Dynamic text fields (date, user name, scale) Template library with organization-wide templates Analyst, Contributor, Administrator Analysis Tool, Asset Management"
+  },
+  {
+    "id": "PRT-002",
+    "title": "Add Map Elements (Title, Legend, Scale Bar, North Arrow)",
+    "category": "Print & Cartography",
+    "categorySlug": "print-cartography",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to add cartographic elements to my map layout, so that the printed map is complete and professional.",
+    "content": "Add Map Elements (Title, Legend, Scale Bar, North Arrow) As an analyst, I want to add cartographic elements to my map layout, so that the printed map is complete and professional. User can add a map title with custom text User can add a legend showing layer symbology User can add a scale bar (graphic or text) User can add a north arrow or compass rose Elements can be positioned and sized within the layout _[Customize: Define available element types and styles]_ Custom logo/watermark placement Data source credits and disclaimers Overview/locator map inset Coordinate grid or graticule overlay Analyst, Contributor Analysis Tool, Asset Management"
+  },
+  {
+    "id": "PRT-003",
+    "title": "Print to Specific Paper Size/Orientation",
+    "category": "Print & Cartography",
+    "categorySlug": "print-cartography",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to print my map to a specific paper size and orientation, so that the output fits my intended use.",
+    "content": "Print to Specific Paper Size/Orientation As a map user, I want to print my map to a specific paper size and orientation, so that the output fits my intended use. User can select paper size (Letter, A4, Tabloid, A3, custom) User can choose portrait or landscape orientation Map extent adjusts to fit selected dimensions Print preview shows accurate representation User can print directly or export to PDF _[Customize: Define available paper sizes]_ Custom paper dimensions Margin configuration High DPI output for professional printing Poster-size output with tiling Analyst, Contributor, Viewer Analysis Tool, Asset Management, Public Portal"
+  },
+  {
+    "id": "PRT-004",
+    "title": "Generate Map Series/Atlas",
+    "category": "Print & Cartography",
+    "categorySlug": "print-cartography",
+    "tier": "Specialized",
+    "effort": "X-Large",
+    "userStory": "As an analyst, I want to generate a series of maps covering multiple areas, so that I can create an atlas or systematic map set.",
+    "content": "Generate Map Series/Atlas As an analyst, I want to generate a series of maps covering multiple areas, so that I can create an atlas or systematic map set. User can define a grid or feature-based extent series Each map page uses the same layout template Page numbering and index grid are automatically generated Dynamic text updates per page (area name, page number) Series can be exported as multi-page PDF or individual files _[Customize: Define series extent options]_ Feature-driven series (one map per district, parcel, etc.) Grid-based series with overlap Overview map with index showing all pages Table of contents generation Analyst, Administrator Analysis Tool"
+  },
+  {
+    "id": "CHT-001",
+    "title": "Display Attribute Chart (Bar, Pie, Line)",
+    "category": "Charts & Dashboards",
+    "categorySlug": "charts-dashboards",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to display attribute data as charts, so that I can visualize patterns and distributions beyond the map.",
+    "content": "Display Attribute Chart (Bar, Pie, Line) As an analyst, I want to display attribute data as charts, so that I can visualize patterns and distributions beyond the map. User can create bar charts from categorical attributes User can create pie/donut charts showing proportions User can create line charts for temporal or sequential data Charts update when data filters change Chart shows data from visible/selected features _[Customize: Define chart types and styling options]_ Stacked and grouped bar charts Histogram for continuous data Scatter plots for two-variable analysis Area charts for cumulative visualization Analyst, Viewer Analysis Tool"
+  },
+  {
+    "id": "CHT-002",
+    "title": "Link Chart to Map Selection",
+    "category": "Charts & Dashboards",
+    "categorySlug": "charts-dashboards",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want charts and maps to be linked, so that selecting on one highlights the corresponding data on the other.",
+    "content": "Link Chart to Map Selection As an analyst, I want charts and maps to be linked, so that selecting on one highlights the corresponding data on the other. Clicking a chart element highlights corresponding features on the map Selecting features on the map highlights corresponding chart elements Multiple selection is synchronized across both views Hover on chart shows tooltip and highlights map feature Link can be toggled on/off by user preference _[Customize: Define linked selection behavior]_ Brushing (drag selection on chart selects map features) Filter mode (chart selection filters map display) Cross-filtering between multiple charts Animated transitions between selections Analyst Analysis Tool"
+  },
+  {
+    "id": "CHT-003",
+    "title": "Display Summary Statistics Panel",
+    "category": "Charts & Dashboards",
+    "categorySlug": "charts-dashboards",
+    "tier": "Enhanced",
+    "effort": "Small",
+    "userStory": "As an analyst, I want to see summary statistics for the current data view, so that I can quickly understand the data without detailed analysis.",
+    "content": "Display Summary Statistics Panel As an analyst, I want to see summary statistics for the current data view, so that I can quickly understand the data without detailed analysis. Panel displays feature count for visible/filtered data Numeric attributes show sum, average, min, max Categorical attributes show count per category Statistics update when filter or extent changes User can collapse/expand the statistics panel _[Customize: Define which statistics to display]_ Comparison statistics (current vs. previous selection) Sparkline mini-charts for trends Percentage of total calculations Custom calculated fields Analyst, Viewer Analysis Tool"
+  },
+  {
+    "id": "CHT-004",
+    "title": "Create Dashboard Layout",
+    "category": "Charts & Dashboards",
+    "categorySlug": "charts-dashboards",
+    "tier": "Specialized",
+    "effort": "Large",
+    "userStory": "As an analyst, I want to create a dashboard combining map and multiple widgets, so that I can monitor and analyze data in a single view.",
+    "content": "Create Dashboard Layout As an analyst, I want to create a dashboard combining map and multiple widgets, so that I can monitor and analyze data in a single view. User can arrange map and widgets in a flexible grid layout Available widgets include: charts, statistics, legends, filters Widgets can be resized and repositioned Dashboard configuration can be saved and shared All widgets are synchronized to the same data source _[Customize: Define available widget types]_ Predefined dashboard templates Real-time data refresh Full-screen presentation mode Embedded external content (iframes, images) Analyst, Administrator Analysis Tool"
+  },
+  {
+    "id": "3DT-001",
+    "title": "Display 3D Terrain/Elevation",
+    "category": "3D & Terrain",
+    "categorySlug": "3d-terrain",
+    "tier": "Enhanced",
+    "effort": "Large",
+    "userStory": "As a map user, I want to view terrain with elevation, so that I can understand the topography and landscape.",
+    "content": "Display 3D Terrain/Elevation As a map user, I want to view terrain with elevation, so that I can understand the topography and landscape. Map displays terrain with elevation-based relief User can toggle between 2D and 3D terrain views Elevation data is loaded from a terrain tile service Terrain rendering respects current zoom level Vertical exaggeration can be adjusted for subtle terrain _[Customize: Define terrain data source and exaggeration factor]_ Hillshade overlay vs. true 3D terrain Elevation color ramps (hypsometric tinting) Contour lines overlay Bathymetry for underwater terrain Analyst, Viewer, Public User Analysis Tool, Public Portal"
+  },
+  {
+    "id": "3DT-002",
+    "title": "Extrude Features by Attribute",
+    "category": "3D & Terrain",
+    "categorySlug": "3d-terrain",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As an analyst, I want to extrude polygon features by an attribute value, so that I can create 3D visualizations showing magnitude.",
+    "content": "Extrude Features by Attribute As an analyst, I want to extrude polygon features by an attribute value, so that I can create 3D visualizations showing magnitude. User can select a numeric attribute to drive extrusion height Polygon features are rendered as 3D blocks/prisms Extrusion scale can be adjusted (e.g., 1 unit = 10 meters) Base height can be set to terrain surface or fixed elevation Extruded features are styled with top and side colors _[Customize: Define extrusion scale and style options]_ Extrude points as cylinders or cones Graduated color by height Animate extrusion changes over time Multiple extrusion layers Analyst Analysis Tool"
+  },
+  {
+    "id": "3DT-003",
+    "title": "Navigate in 3D (Tilt, Rotate, Fly-to)",
+    "category": "3D & Terrain",
+    "categorySlug": "3d-terrain",
+    "tier": "Enhanced",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to navigate in 3D space by tilting, rotating, and flying to locations, so that I can explore terrain and features from different angles.",
+    "content": "Navigate in 3D (Tilt, Rotate, Fly-to) As a map user, I want to navigate in 3D space by tilting, rotating, and flying to locations, so that I can explore terrain and features from different angles. User can tilt the view by dragging (or Ctrl+drag) User can rotate the view around the center point Fly-to animation smoothly moves to a new location and angle User can reset to a north-up, top-down view Keyboard controls are available for tilt and rotation _[Customize: Define navigation gesture mappings]_ First-person/walk-through mode Orbit around a selected feature Preset camera positions (bookmarks) Collision detection (prevent going underground) Analyst, Viewer, Public User Analysis Tool, Public Portal"
+  }
+]
