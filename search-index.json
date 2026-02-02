@@ -70,6 +70,16 @@
     "content": "Kinetic Panning (Momentum) As a map user, I want the map to continue moving with momentum after I release a pan gesture, so that navigation feels smooth and natural. Map continues moving after pan gesture ends (drag release) Movement speed decays naturally (easing) User can interrupt momentum by touching/clicking the map Momentum respects extent constraints (no flying off the edge) _[Customize: Define momentum decay rate]_ Disable kinetic panning for precision applications Adjustable momentum sensitivity Different decay curves (linear, exponential) Public User, Viewer, Field Worker Public Portal, Data Viewer, Field Collection"
   },
   {
+    "id": "NAV-008",
+    "title": "Save and Restore Map Views (Bookmarks)",
+    "category": "Navigation",
+    "categorySlug": "navigation",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to save the current map view as a bookmark, so that I can quickly return to specific locations later.",
+    "content": "Save and Restore Map Views (Bookmarks) As a map user, I want to save the current map view as a bookmark, so that I can quickly return to specific locations later. User can save the current view (extent, zoom, rotation) with a custom name Saved bookmarks are listed in an accessible panel or menu Clicking a bookmark restores the saved view User can rename and delete existing bookmarks Bookmarks persist across sessions (local storage or user account) _[Customize: Bookmark storage and sharing options]_ Include layer visibility state in bookmark Include filter/selection state in bookmark Share bookmarks with other users System-defined bookmarks (predefined locations) Folder organization for many bookmarks Thumbnail preview of bookmarked view Viewer, Analyst, Contributor Data Viewer, Analysis Tool, Asset Management"
+  },
+  {
     "id": "LAY-001",
     "title": "Toggle Layer Visibility",
     "category": "Layer Management",
@@ -240,6 +250,16 @@
     "content": "Filter Features by Attribute As a map user, I want to filter which features are displayed based on their attributes, so that I can focus on relevant data. Filter controls are available for configured attributes Changing a filter immediately updates the visible features Active filters are clearly indicated User can clear filters to show all features _[Customize: Which attributes are filterable and filter types]_ Dropdown/select for categorical attributes Slider for numeric ranges Text search for string attributes Date range picker for temporal data Multiple filters combined with AND/OR logic Public User, Viewer, Analyst Public Portal, Analysis Tool, Data Viewer, Asset Management"
   },
   {
+    "id": "INT-006",
+    "title": "Edit Feature Attributes",
+    "category": "Feature Interaction",
+    "categorySlug": "feature-interaction",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to edit the attribute values of a feature, so that I can update or correct the data.",
+    "content": "Edit Feature Attributes As a contributor, I want to edit the attribute values of a feature, so that I can update or correct the data. User can open an edit form for a selected feature Form displays all editable attributes with current values Appropriate input types are used (text, number, date, dropdown, etc.) Validation rules are enforced before saving User can save changes or cancel without saving Required fields are clearly indicated _[Customize: Editable fields, validation rules, and form layout]_ Inline editing in popup vs. dedicated edit panel Batch editing multiple features at once Dependent/cascading dropdowns Photo/attachment uploads as part of attribute form Calculated fields that update automatically Rich text or formatted input fields Contributor, Field Worker, Analyst Field Collection, Collaborative Editor, Asset Management"
+  },
+  {
     "id": "DRW-001",
     "title": "Draw Point Feature",
     "category": "Drawing & Editing",
@@ -328,6 +348,26 @@
     "effort": "Medium",
     "userStory": "As a contributor, I want new vertices to snap to existing features, so that I can create accurate, connected geometries.",
     "content": "Snap to Features As a contributor, I want new vertices to snap to existing features, so that I can create accurate, connected geometries. When drawing near an existing vertex, cursor snaps to it When drawing near an edge, cursor snaps to the nearest point on that edge Visual indicator shows when snapping is active Snapping can be toggled on/off _[Customize: Snap tolerance and layer priority]_ Snap to grid instead of/in addition to features Snap to specific layers only Different snap modes (vertex, edge, intersection) Keyboard modifier to temporarily disable snapping Contributor, Analyst Collaborative Editor, Asset Management, Analysis Tool"
+  },
+  {
+    "id": "DRW-011",
+    "title": "Copy and Paste Features",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to copy and paste features, so that I can duplicate existing features without redrawing them.",
+    "content": "Copy and Paste Features As a contributor, I want to copy and paste features, so that I can duplicate existing features without redrawing them. User can copy selected feature(s) to clipboard User can paste copied features at a new location Pasted features retain attribute values from the original Keyboard shortcuts work (Ctrl+C to copy, Ctrl+V to paste) Visual feedback indicates paste location before confirming _[Customize: Which attributes are copied vs. reset]_ Paste in place (duplicate at same location) Paste with offset (automatic displacement) Copy across layers or datasets Copy to external applications (as GeoJSON/WKT) Duplicate with automatic attribute changes (e.g., new ID) Contributor, Analyst Collaborative Editor, Asset Management, Analysis Tool"
+  },
+  {
+    "id": "DRW-010",
+    "title": "Undo/Redo Actions",
+    "category": "Drawing & Editing",
+    "categorySlug": "drawing-editing",
+    "tier": "Foundation",
+    "effort": "Medium",
+    "userStory": "As a contributor, I want to undo and redo my editing actions, so that I can correct mistakes without losing work.",
+    "content": "Undo/Redo Actions As a contributor, I want to undo and redo my editing actions, so that I can correct mistakes without losing work. Undo button reverses the last editing action Redo button re-applies an undone action Keyboard shortcuts work (Ctrl+Z for undo, Ctrl+Shift+Z or Ctrl+Y for redo) Multiple actions can be undone in sequence (history stack) Undo/redo buttons are disabled when unavailable _[Customize: History depth and persistence across sessions]_ Undo history panel showing all recent actions Selective undo (undo specific action, not just most recent) Undo across feature boundaries (undo affects multiple features) Persist undo history across page refresh Contributor, Field Worker, Analyst Field Collection, Collaborative Editor, Asset Management, Analysis Tool"
   },
   {
     "id": "MEA-001",
@@ -466,8 +506,8 @@
     "categorySlug": "controls-ui",
     "tier": "Foundation",
     "effort": "Small",
-    "userStory": "As a map operator, I need to display proper attribution for map data sources, so that I comply with licensing requirements.",
-    "content": "Display Attribution As a map operator, I need to display proper attribution for map data sources, so that I comply with licensing requirements. Attribution text is visible on the map Attribution updates when layer sources change Attribution links are clickable Attribution can be collapsed/expanded if lengthy _[Customize: Attribution text and styling]_ Collapsible attribution panel Attribution in popup/modal instead of on-map Logo-based attribution for branded sources Custom attribution text Public User, Viewer, Contributor, Analyst, Field Worker All"
+    "userStory": "As an administrator, I need to display proper attribution for map data sources, so that I comply with licensing requirements.",
+    "content": "Display Attribution As an administrator, I need to display proper attribution for map data sources, so that I comply with licensing requirements. Attribution text is visible on the map Attribution updates when layer sources change Attribution links are clickable Attribution can be collapsed/expanded if lengthy _[Customize: Attribution text and styling]_ Collapsible attribution panel Attribution in popup/modal instead of on-map Logo-based attribution for branded sources Custom attribution text Public User, Viewer, Contributor, Analyst, Field Worker All"
   },
   {
     "id": "CTL-005",
@@ -488,6 +528,16 @@
     "effort": "Small",
     "userStory": "As a map user, I want to see a compass showing north, so that I know the map's orientation.",
     "content": "Display Compass/North Arrow As a map user, I want to see a compass showing north, so that I know the map's orientation. Compass/north arrow is displayed on the map Compass rotates when map is rotated Clicking the compass resets rotation to north-up Compass is hidden when map is north-up (optional) _[Customize: Compass styling and visibility]_ Always visible vs. only when rotated Simple north arrow vs. full compass rose Show bearing in degrees Custom compass icon Viewer, Analyst, Field Worker Field Collection, Analysis Tool, Public Portal"
+  },
+  {
+    "id": "CTL-007",
+    "title": "Display Legend",
+    "category": "Controls & UI",
+    "categorySlug": "controls-ui",
+    "tier": "Standard",
+    "effort": "Medium",
+    "userStory": "As a map user, I want to see a legend explaining what the symbols mean, so that I can understand the data displayed on the map.",
+    "content": "Display Legend As a map user, I want to see a legend explaining what the symbols mean, so that I can understand the data displayed on the map. Legend displays symbols/colors for each visible layer Legend updates when layer visibility changes Legend shows the meaning of graduated/classified symbology Legend can be expanded/collapsed to save space Legend labels are clear and readable _[Customize: Legend position, style, and content]_ Integrated with layer panel vs. standalone control Interactive legend (click symbol to filter map) Collapsible sections per layer Dynamic legend based on current map extent (only show features present) Print-friendly legend format Public User, Viewer, Analyst Public Portal, Data Viewer, Analysis Tool, Asset Management"
   },
   {
     "id": "IMP-001",
@@ -767,7 +817,7 @@
     "tier": "Foundation",
     "effort": "Medium",
     "userStory": "As a map user, I want the map to load quickly, so that I can start working without delay.",
-    "content": "Fast Initial Load As a map user, I want the map to load quickly, so that I can start working without delay. Map is interactive within 3 seconds on broadband connection Critical resources load first (basemap, essential layers) Progress indicator shows while loading Non-critical content loads progressively Performance is acceptable on slower connections _[Customize: Performance targets for different network conditions]_ Skeleton/placeholder UI while loading Prioritized loading of visible extent Lazy loading of off-screen layers Pre-rendered static tiles for instant display Public User, Viewer, Contributor, Analyst, Field Worker All"
+    "content": "Fast Initial Load As a map user, I want the map to load quickly, so that I can start working without delay. Map is interactive within 3 seconds on broadband connection Critical resources load first (basemap, essential layers) Progress indicator shows while loading Non-critical content loads progressively Map is interactive within 5 seconds on 3G connections (1.5 Mbps) _[Customize: Performance targets for different network conditions]_ Skeleton/placeholder UI while loading Prioritized loading of visible extent Lazy loading of off-screen layers Pre-rendered static tiles for instant display Public User, Viewer, Contributor, Analyst, Field Worker All"
   },
   {
     "id": "PRF-002",
@@ -840,14 +890,24 @@
     "content": "Graceful Degradation As a map user, I want the application to remain usable even when some components fail, so that I can continue working. Failure of one layer doesn't crash the entire application Failed layers show an error indicator but don't block others Core functionality remains available when non-essential features fail User is informed about degraded functionality Recovery is attempted automatically when possible _[Customize: Which components are essential vs. optional]_ Fallback to cached data when server is unavailable Alternative basemap if primary fails Read-only mode when editing service is down Static map fallback for total failure Public User, Viewer, Field Worker Public Portal, Field Collection"
   },
   {
+    "id": "ERR-005",
+    "title": "Display Status Notifications",
+    "category": "Error Handling",
+    "categorySlug": "error-handling",
+    "tier": "Standard",
+    "effort": "Small",
+    "userStory": "As a map user, I want to see notifications for successful actions and status updates, so that I know when operations complete and what's happening.",
+    "content": "Display Status Notifications As a map user, I want to see notifications for successful actions and status updates, so that I know when operations complete and what's happening. Success messages confirm completed actions (e.g., \"Feature saved\", \"Export complete\") Informational messages communicate status (e.g., \"Syncing...\", \"3 features updated\") Warning messages alert to non-critical issues (e.g., \"Working offline\") Notifications appear briefly and auto-dismiss (configurable duration) User can manually dismiss notifications Multiple notifications queue or stack appropriately _[Customize: Notification styles, positions, and durations]_ Toast/snackbar notifications Notification center with history Badge counts for unread notifications Sound/vibration for important notifications Action buttons in notifications (e.g., \"Undo\", \"View\") Persistent status bar for ongoing operations Public User, Viewer, Contributor, Analyst, Field Worker All"
+  },
+  {
     "id": "CMP-001",
     "title": "WCAG Accessibility Compliance",
     "category": "Compliance",
     "categorySlug": "compliance",
     "tier": "Foundation",
     "effort": "Large",
-    "userStory": "As a product owner, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users.",
-    "content": "WCAG Accessibility Compliance As a product owner, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users. All pages pass automated WCAG 2.1 AA testing Manual accessibility audit confirms compliance Keyboard navigation is fully functional Screen reader navigation is effective Color contrast meets minimum ratios (4.5:1 text, 3:1 UI) Accessibility statement is published _[Customize: WCAG level and additional requirements]_ WCAG 2.1 AAA compliance Section 508 compliance (US federal) EN 301 549 compliance (EU) Organization-specific accessibility standards Public User, Viewer, Contributor, Analyst All"
+    "userStory": "As an administrator, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users.",
+    "content": "WCAG Accessibility Compliance As an administrator, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users. All pages pass automated WCAG 2.1 AA testing Manual accessibility audit confirms compliance Keyboard navigation is fully functional Screen reader navigation is effective Color contrast meets minimum ratios (4.5:1 text, 3:1 UI) Accessibility statement is published _[Customize: WCAG level and additional requirements]_ WCAG 2.1 AAA compliance Section 508 compliance (US federal) EN 301 549 compliance (EU) Organization-specific accessibility standards Public User, Viewer, Contributor, Analyst All"
   },
   {
     "id": "CMP-002",
@@ -856,8 +916,8 @@
     "categorySlug": "compliance",
     "tier": "Standard",
     "effort": "Medium",
-    "userStory": "As a product owner, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues.",
-    "content": "Privacy Compliance As a product owner, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues. Privacy policy is published and linked from the application User consent is obtained before collecting personal data Users can request their data (data subject access request) Users can request deletion of their data Data collection is limited to what's necessary Location data handling complies with regulations _[Customize: Applicable privacy regulations]_ GDPR compliance (EU) CCPA compliance (California) PIPEDA compliance (Canada) Cookie consent management Administrator All"
+    "userStory": "As an administrator, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues.",
+    "content": "Privacy Compliance As an administrator, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues. Privacy policy is published and linked from the application User consent is obtained before collecting personal data Users can request their data (data subject access request) Users can request deletion of their data Data collection is limited to what's necessary Location data handling complies with regulations _[Customize: Applicable privacy regulations]_ GDPR compliance (EU) CCPA compliance (California) PIPEDA compliance (Canada) Cookie consent management Administrator All"
   },
   {
     "id": "CMP-003",
