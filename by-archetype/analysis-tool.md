@@ -63,6 +63,9 @@ These stories are essential for analysis tools:
 - [STY-001](../by-category/11-styling.md#sty-001-style-by-attribute-categorical): Style by Attribute (Categorical)
 - [STY-004](../by-category/11-styling.md#sty-004-apply-color-ramp-graduated): Apply Color Ramp (Graduated)
 
+### Controls
+- [CTL-007](../by-category/09-controls-ui.md#ctl-007-display-legend): Display Legend
+
 ### Integration
 - [ITG-003](../by-category/15-integration.md#itg-003-authenticate-users): Authenticate Users
 
@@ -89,6 +92,7 @@ These stories significantly enhance analysis capabilities:
 ### Drawing (for analysis areas)
 - [DRW-003](../by-category/05-drawing-editing.md#drw-003-draw-polygon-feature): Draw Polygon Feature
 - [DRW-004](../by-category/05-drawing-editing.md#drw-004-draw-circle-feature): Draw Circle Feature (buffers)
+- [DRW-010](../by-category/05-drawing-editing.md#drw-010-undoredo-actions): Undo/Redo Actions
 
 ### Measurement
 - [MEA-003](../by-category/06-measurement.md#mea-003-live-measurement-display): Live Measurement Display
@@ -100,6 +104,9 @@ These stories significantly enhance analysis capabilities:
 
 ### Controls
 - [CTL-005](../by-category/09-controls-ui.md#ctl-005-fullscreen-mode): Fullscreen Mode
+
+### Navigation
+- [NAV-008](../by-category/01-navigation.md#nav-008-save-and-restore-map-views-bookmarks): Save and Restore Map Views (Bookmarks)
 
 ### Import/Export
 - [IMP-001](../by-category/10-import-export.md#imp-001-import-data-file): Import Data File

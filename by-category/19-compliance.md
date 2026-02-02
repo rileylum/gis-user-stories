@@ -15,7 +15,7 @@ Regulatory compliance, accessibility standards, and data governance.
 | **Effort** | Large |
 
 **User Story:**
-> As a product owner, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users.
+> As an administrator, I need the application to meet WCAG 2.1 AA standards, so that we comply with accessibility regulations and serve all users.
 
 **Acceptance Criteria:**
 - [ ] All pages pass automated WCAG 2.1 AA testing
@@ -58,7 +58,7 @@ Regulatory compliance, accessibility standards, and data governance.
 | **Effort** | Medium |
 
 **User Story:**
-> As a product owner, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues.
+> As an administrator, I need the application to comply with privacy regulations, so that we protect user data and avoid legal issues.
 
 **Acceptance Criteria:**
 - [ ] Privacy policy is published and linked from the application

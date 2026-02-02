@@ -11,7 +11,7 @@ Creating and modifying geographic features on the map.
 | **Tier** | Foundation |
 | **Personas** | Contributor, Field Worker, Analyst |
 | **Archetypes** | Field Collection, Collaborative Editor, Asset Management |
-| **Dependencies** | DIS-003, INT-001 |
+| **Dependencies** | DIS-003 |
 | **Effort** | Small |
 
 **User Story:**
@@ -51,7 +51,7 @@ Creating and modifying geographic features on the map.
 | **Tier** | Foundation |
 | **Personas** | Contributor, Field Worker, Analyst |
 | **Archetypes** | Field Collection, Collaborative Editor, Asset Management |
-| **Dependencies** | DIS-003, INT-001 |
+| **Dependencies** | DIS-003 |
 | **Effort** | Medium |
 
 **User Story:**
@@ -92,7 +92,7 @@ Creating and modifying geographic features on the map.
 | **Tier** | Foundation |
 | **Personas** | Contributor, Field Worker, Analyst |
 | **Archetypes** | Field Collection, Collaborative Editor, Asset Management, Analysis Tool |
-| **Dependencies** | DIS-003, INT-001 |
+| **Dependencies** | DIS-003 |
 | **Effort** | Medium |
 
 **User Story:**
@@ -372,6 +372,91 @@ Creating and modifying geographic features on the map.
 
 ---
 
+## DRW-011: Copy and Paste Features
+
+| Attribute | Value |
+|-----------|-------|
+| **Tier** | Standard |
+| **Personas** | Contributor, Analyst |
+| **Archetypes** | Collaborative Editor, Asset Management, Analysis Tool |
+| **Dependencies** | INT-001, DRW-001 |
+| **Effort** | Medium |
+
+**User Story:**
+> As a contributor, I want to copy and paste features, so that I can duplicate existing features without redrawing them.
+
+**Acceptance Criteria:**
+- [ ] User can copy selected feature(s) to clipboard
+- [ ] User can paste copied features at a new location
+- [ ] Pasted features retain attribute values from the original
+- [ ] Keyboard shortcuts work (Ctrl+C to copy, Ctrl+V to paste)
+- [ ] Visual feedback indicates paste location before confirming
+- [ ] _[Customize: Which attributes are copied vs. reset]_
+
+**Variations:**
+- Paste in place (duplicate at same location)
+- Paste with offset (automatic displacement)
+- Copy across layers or datasets
+- Copy to external applications (as GeoJSON/WKT)
+- Duplicate with automatic attribute changes (e.g., new ID)
+
+**Customization Prompts:**
+- Should all attributes be copied, or should some be reset (e.g., ID, timestamps)?
+- Should paste location be click-to-place or automatic offset?
+- Should copy work across different layers?
+- Should external clipboard formats be supported?
+
+**Non-Functional Considerations:**
+- **Performance**: Copy/paste should be instant even for complex geometries
+- **Accessibility**: Keyboard shortcuts must work; announce copy/paste actions
+- **Mobile**: Consider touch-based alternative (long-press menu)
+
+**Related Stories:** INT-001, INT-002, DRW-001, DRW-006, DRW-010
+
+---
+
+## DRW-010: Undo/Redo Actions
+
+| Attribute | Value |
+|-----------|-------|
+| **Tier** | Foundation |
+| **Personas** | Contributor, Field Worker, Analyst |
+| **Archetypes** | Field Collection, Collaborative Editor, Asset Management, Analysis Tool |
+| **Dependencies** | DRW-001 |
+| **Effort** | Medium |
+
+**User Story:**
+> As a contributor, I want to undo and redo my editing actions, so that I can correct mistakes without losing work.
+
+**Acceptance Criteria:**
+- [ ] Undo button reverses the last editing action
+- [ ] Redo button re-applies an undone action
+- [ ] Keyboard shortcuts work (Ctrl+Z for undo, Ctrl+Shift+Z or Ctrl+Y for redo)
+- [ ] Multiple actions can be undone in sequence (history stack)
+- [ ] Undo/redo buttons are disabled when unavailable
+- [ ] _[Customize: History depth and persistence across sessions]_
+
+**Variations:**
+- Undo history panel showing all recent actions
+- Selective undo (undo specific action, not just most recent)
+- Undo across feature boundaries (undo affects multiple features)
+- Persist undo history across page refresh
+
+**Customization Prompts:**
+- How many actions should be stored in the undo history?
+- Should undo history persist if the user navigates away?
+- Should undo/redo include attribute edits or only geometry changes?
+- Should there be a clear history option?
+
+**Non-Functional Considerations:**
+- **Performance**: Undo/redo should be instant; history storage should not impact memory significantly
+- **Accessibility**: Keyboard shortcuts must work; undo/redo buttons must be accessible
+- **Mobile**: Consider gesture-based undo (shake to undo) as an option
+
+**Related Stories:** DRW-006, DRW-007, DRW-008, ERR-003
+
+---
+
 ## Summary
 
 | ID | Story | Tier | Effort |
@@ -385,3 +470,5 @@ Creating and modifying geographic features on the map.
 | DRW-007 | Move Feature | Standard | Small |
 | DRW-008 | Delete Feature | Foundation | Small |
 | DRW-009 | Snap to Features | Enhanced | Medium |
+| DRW-010 | Undo/Redo Actions | Foundation | Medium |
+| DRW-011 | Copy and Paste Features | Standard | Medium |

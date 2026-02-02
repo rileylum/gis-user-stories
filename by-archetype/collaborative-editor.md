@@ -53,6 +53,9 @@ These stories are essential for collaborative editing:
 - [DRW-007](../by-category/05-drawing-editing.md#drw-007-move-feature): Move Feature
 - [DRW-008](../by-category/05-drawing-editing.md#drw-008-delete-feature): Delete Feature
 - [DRW-009](../by-category/05-drawing-editing.md#drw-009-snap-to-features): Snap to Features
+- [DRW-010](../by-category/05-drawing-editing.md#drw-010-undoredo-actions): Undo/Redo Actions
+- [DRW-011](../by-category/05-drawing-editing.md#drw-011-copy-and-paste-features): Copy and Paste Features
+- [INT-006](../by-category/04-feature-interaction.md#int-006-edit-feature-attributes): Edit Feature Attributes
 
 ### Controls
 - [CTL-001](../by-category/09-controls-ui.md#ctl-001-display-zoom-buttons): Display Zoom Buttons
@@ -120,6 +123,7 @@ These stories significantly improve collaboration:
 ### Error Handling
 - [ERR-003](../by-category/18-error-handling.md#err-003-auto-save-drafts): Auto-Save Drafts
 - [ERR-004](../by-category/18-error-handling.md#err-004-graceful-degradation): Graceful Degradation
+- [ERR-005](../by-category/18-error-handling.md#err-005-display-status-notifications): Display Status Notifications
 
 ## Optional Stories (Nice to Have)
 

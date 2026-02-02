@@ -48,6 +48,8 @@ These stories are essential for asset management:
 - [DRW-006](../by-category/05-drawing-editing.md#drw-006-edit-feature-geometry): Edit Feature Geometry
 - [DRW-007](../by-category/05-drawing-editing.md#drw-007-move-feature): Move Feature
 - [DRW-008](../by-category/05-drawing-editing.md#drw-008-delete-feature): Delete Feature
+- [DRW-010](../by-category/05-drawing-editing.md#drw-010-undoredo-actions): Undo/Redo Actions
+- [INT-006](../by-category/04-feature-interaction.md#int-006-edit-feature-attributes): Edit Feature Attributes
 
 ### Search
 - [SRC-001](../by-category/08-search-geocoding.md#src-001-search-by-addressplace): Search by Address/Place
@@ -85,6 +87,7 @@ These stories significantly improve asset management workflows:
 - [DRW-002](../by-category/05-drawing-editing.md#drw-002-draw-line-feature): Draw Line Feature (for linear assets)
 - [DRW-003](../by-category/05-drawing-editing.md#drw-003-draw-polygon-feature): Draw Polygon Feature (for area assets)
 - [DRW-009](../by-category/05-drawing-editing.md#drw-009-snap-to-features): Snap to Features
+- [DRW-011](../by-category/05-drawing-editing.md#drw-011-copy-and-paste-features): Copy and Paste Features
 
 ### Search
 - [SRC-002](../by-category/08-search-geocoding.md#src-002-search-by-coordinates): Search by Coordinates
@@ -93,6 +96,9 @@ These stories significantly improve asset management workflows:
 - [STY-001](../by-category/11-styling.md#sty-001-style-by-attribute-categorical): Style by Attribute (Categorical)
 - [STY-002](../by-category/11-styling.md#sty-002-display-custom-iconssymbols): Display Custom Icons/Symbols
 - [STY-003](../by-category/11-styling.md#sty-003-display-feature-labels): Display Feature Labels
+
+### Controls
+- [CTL-007](../by-category/09-controls-ui.md#ctl-007-display-legend): Display Legend
 
 ### Data Management
 - [DAT-001](../by-category/14-data-management.md#dat-001-upload-data): Upload Data

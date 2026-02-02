@@ -74,6 +74,7 @@ These stories significantly enhance the portal experience:
 
 ### Controls
 - [CTL-005](../by-category/09-controls-ui.md#ctl-005-fullscreen-mode): Fullscreen Mode
+- [CTL-007](../by-category/09-controls-ui.md#ctl-007-display-legend): Display Legend
 
 ### Sharing
 - [IMP-005](../by-category/10-import-export.md#imp-005-generate-permalinkshare-url): Generate Permalink

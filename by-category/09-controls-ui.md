@@ -139,7 +139,7 @@ Map controls and user interface elements.
 | **Effort** | Small |
 
 **User Story:**
-> As a map operator, I need to display proper attribution for map data sources, so that I comply with licensing requirements.
+> As an administrator, I need to display proper attribution for map data sources, so that I comply with licensing requirements.
 
 **Acceptance Criteria:**
 - [ ] Attribution text is visible on the map
@@ -249,6 +249,50 @@ Map controls and user interface elements.
 
 ---
 
+## CTL-007: Display Legend
+
+| Attribute | Value |
+|-----------|-------|
+| **Tier** | Standard |
+| **Personas** | Public User, Viewer, Analyst |
+| **Archetypes** | Public Portal, Data Viewer, Analysis Tool, Asset Management |
+| **Dependencies** | DIS-003, LAY-001 |
+| **Effort** | Medium |
+
+**User Story:**
+> As a map user, I want to see a legend explaining what the symbols mean, so that I can understand the data displayed on the map.
+
+**Acceptance Criteria:**
+- [ ] Legend displays symbols/colors for each visible layer
+- [ ] Legend updates when layer visibility changes
+- [ ] Legend shows the meaning of graduated/classified symbology
+- [ ] Legend can be expanded/collapsed to save space
+- [ ] Legend labels are clear and readable
+- [ ] _[Customize: Legend position, style, and content]_
+
+**Variations:**
+- Integrated with layer panel vs. standalone control
+- Interactive legend (click symbol to filter map)
+- Collapsible sections per layer
+- Dynamic legend based on current map extent (only show features present)
+- Print-friendly legend format
+
+**Customization Prompts:**
+- Should the legend be always visible or collapsible?
+- Should clicking a legend item filter the map?
+- Where should the legend be positioned?
+- Should the legend show counts of features per category?
+- Should the legend include layer descriptions?
+
+**Non-Functional Considerations:**
+- **Performance**: Legend should update quickly when layers change
+- **Accessibility**: Legend must be readable by screen readers; sufficient color contrast
+- **Mobile**: Legend should be collapsible on small screens; consider bottom sheet
+
+**Related Stories:** DIS-003, LAY-001, STY-001, STY-002
+
+---
+
 ## Summary
 
 | ID | Story | Tier | Effort |
@@ -259,3 +303,4 @@ Map controls and user interface elements.
 | CTL-004 | Display Attribution | Foundation | Small |
 | CTL-005 | Fullscreen Mode | Standard | Small |
 | CTL-006 | Display Compass | Standard | Small |
+| CTL-007 | Display Legend | Standard | Medium |

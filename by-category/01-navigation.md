@@ -275,6 +275,51 @@ Core map navigation functionality for panning, zooming, and controlling the map 
 
 ---
 
+## NAV-008: Save and Restore Map Views (Bookmarks)
+
+| Attribute | Value |
+|-----------|-------|
+| **Tier** | Standard |
+| **Personas** | Viewer, Analyst, Contributor |
+| **Archetypes** | Data Viewer, Analysis Tool, Asset Management |
+| **Dependencies** | NAV-001, NAV-002 |
+| **Effort** | Medium |
+
+**User Story:**
+> As a map user, I want to save the current map view as a bookmark, so that I can quickly return to specific locations later.
+
+**Acceptance Criteria:**
+- [ ] User can save the current view (extent, zoom, rotation) with a custom name
+- [ ] Saved bookmarks are listed in an accessible panel or menu
+- [ ] Clicking a bookmark restores the saved view
+- [ ] User can rename and delete existing bookmarks
+- [ ] Bookmarks persist across sessions (local storage or user account)
+- [ ] _[Customize: Bookmark storage and sharing options]_
+
+**Variations:**
+- Include layer visibility state in bookmark
+- Include filter/selection state in bookmark
+- Share bookmarks with other users
+- System-defined bookmarks (predefined locations)
+- Folder organization for many bookmarks
+- Thumbnail preview of bookmarked view
+
+**Customization Prompts:**
+- Should bookmarks be stored locally or per-user account?
+- What map state should be captured (just extent, or layers/filters too)?
+- Should bookmarks be shareable between users?
+- Should there be predefined system bookmarks?
+- How many bookmarks should be allowed per user?
+
+**Non-Functional Considerations:**
+- **Performance**: Restoring a bookmark should be fast with smooth transition
+- **Accessibility**: Bookmark list must be keyboard navigable
+- **Mobile**: Bookmark panel should be mobile-friendly; consider swipe gestures
+
+**Related Stories:** NAV-001, NAV-006, IMP-005
+
+---
+
 ## Summary
 
 | ID | Story | Tier | Effort |
@@ -286,3 +331,4 @@ Core map navigation functionality for panning, zooming, and controlling the map 
 | NAV-005 | Rotate the Map | Enhanced | Medium |
 | NAV-006 | Reset View | Standard | Small |
 | NAV-007 | Kinetic Panning | Enhanced | Small |
+| NAV-008 | Save and Restore Map Views (Bookmarks) | Standard | Medium |

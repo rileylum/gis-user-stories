@@ -47,6 +47,10 @@ These stories are essential for field collection:
 - [DRW-001](../by-category/05-drawing-editing.md#drw-001-draw-point-feature): Draw Point Feature
 - [DRW-006](../by-category/05-drawing-editing.md#drw-006-edit-feature-geometry): Edit Feature Geometry
 - [DRW-008](../by-category/05-drawing-editing.md#drw-008-delete-feature): Delete Feature
+- [DRW-010](../by-category/05-drawing-editing.md#drw-010-undoredo-actions): Undo/Redo Actions
+
+### Feature Interaction
+- [INT-006](../by-category/04-feature-interaction.md#int-006-edit-feature-attributes): Edit Feature Attributes
 
 ### Location Services
 - [LOC-001](../by-category/07-location-services.md#loc-001-show-my-location): Show My Location
@@ -62,6 +66,9 @@ These stories are essential for field collection:
 ### Error Handling
 - [ERR-001](../by-category/18-error-handling.md#err-001-display-user-friendly-error-messages): User-Friendly Error Messages
 - [ERR-003](../by-category/18-error-handling.md#err-003-auto-save-drafts): Auto-Save Drafts
+
+### Performance (Critical for Field Work)
+- [PRF-002](../by-category/17-performance.md#prf-002-offline-capability): Offline Capability
 
 ## Recommended Stories (Should Have)
 
@@ -104,12 +111,12 @@ These stories significantly improve field collection workflows:
 
 ### Performance
 - [PRF-001](../by-category/17-performance.md#prf-001-fast-initial-load): Fast Initial Load
-- [PRF-002](../by-category/17-performance.md#prf-002-offline-capability): Offline Capability
 - [PRF-003](../by-category/17-performance.md#prf-003-display-loading-indicators): Display Loading Indicators
 
 ### Error Handling
 - [ERR-002](../by-category/18-error-handling.md#err-002-retry-failed-operations): Retry Failed Operations
 - [ERR-004](../by-category/18-error-handling.md#err-004-graceful-degradation): Graceful Degradation
+- [ERR-005](../by-category/18-error-handling.md#err-005-display-status-notifications): Display Status Notifications
 
 ## Optional Stories (Nice to Have)
 

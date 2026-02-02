@@ -172,6 +172,52 @@ Graceful handling of errors and recovery options.
 
 ---
 
+## ERR-005: Display Status Notifications
+
+| Attribute | Value |
+|-----------|-------|
+| **Tier** | Standard |
+| **Personas** | Public User, Viewer, Contributor, Analyst, Field Worker |
+| **Archetypes** | All |
+| **Dependencies** | None |
+| **Effort** | Small |
+
+**User Story:**
+> As a map user, I want to see notifications for successful actions and status updates, so that I know when operations complete and what's happening.
+
+**Acceptance Criteria:**
+- [ ] Success messages confirm completed actions (e.g., "Feature saved", "Export complete")
+- [ ] Informational messages communicate status (e.g., "Syncing...", "3 features updated")
+- [ ] Warning messages alert to non-critical issues (e.g., "Working offline")
+- [ ] Notifications appear briefly and auto-dismiss (configurable duration)
+- [ ] User can manually dismiss notifications
+- [ ] Multiple notifications queue or stack appropriately
+- [ ] _[Customize: Notification styles, positions, and durations]_
+
+**Variations:**
+- Toast/snackbar notifications
+- Notification center with history
+- Badge counts for unread notifications
+- Sound/vibration for important notifications
+- Action buttons in notifications (e.g., "Undo", "View")
+- Persistent status bar for ongoing operations
+
+**Customization Prompts:**
+- Where should notifications appear (top, bottom, corner)?
+- How long should notifications display before auto-dismissing?
+- Should there be a notification history/center?
+- Should notifications include action buttons?
+- Should different notification types have different styles?
+
+**Non-Functional Considerations:**
+- **Performance**: Notifications should not block or slow the UI
+- **Accessibility**: Notifications must be announced to screen readers; not interrupt focus
+- **Mobile**: Notifications should not obscure critical UI; consider native notification integration
+
+**Related Stories:** ERR-001, ERR-002, PRF-002
+
+---
+
 ## Summary
 
 | ID | Story | Tier | Effort |
@@ -180,3 +226,4 @@ Graceful handling of errors and recovery options.
 | ERR-002 | Retry Failed Operations | Standard | Medium |
 | ERR-003 | Auto-Save Drafts | Enhanced | Medium |
 | ERR-004 | Graceful Degradation | Standard | Medium |
+| ERR-005 | Display Status Notifications | Standard | Small |

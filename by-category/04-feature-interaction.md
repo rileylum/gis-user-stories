@@ -209,6 +209,53 @@ Interacting with map features through selection, hover, popups, and filtering.
 
 ---
 
+## INT-006: Edit Feature Attributes
+
+| Attribute | Value |
+|-----------|-------|
+| **Tier** | Foundation |
+| **Personas** | Contributor, Field Worker, Analyst |
+| **Archetypes** | Field Collection, Collaborative Editor, Asset Management |
+| **Dependencies** | INT-001, INT-004 |
+| **Effort** | Medium |
+
+**User Story:**
+> As a contributor, I want to edit the attribute values of a feature, so that I can update or correct the data.
+
+**Acceptance Criteria:**
+- [ ] User can open an edit form for a selected feature
+- [ ] Form displays all editable attributes with current values
+- [ ] Appropriate input types are used (text, number, date, dropdown, etc.)
+- [ ] Validation rules are enforced before saving
+- [ ] User can save changes or cancel without saving
+- [ ] Required fields are clearly indicated
+- [ ] _[Customize: Editable fields, validation rules, and form layout]_
+
+**Variations:**
+- Inline editing in popup vs. dedicated edit panel
+- Batch editing multiple features at once
+- Dependent/cascading dropdowns
+- Photo/attachment uploads as part of attribute form
+- Calculated fields that update automatically
+- Rich text or formatted input fields
+
+**Customization Prompts:**
+- Which attributes should be editable vs. read-only?
+- What validation rules apply to each field?
+- Should there be required fields?
+- Should the form support attachments (photos, documents)?
+- Should changes require confirmation before saving?
+- Is there an approval workflow for attribute changes?
+
+**Non-Functional Considerations:**
+- **Performance**: Form should load quickly; validation should not block typing
+- **Accessibility**: All form inputs must be properly labeled; error messages associated with fields
+- **Mobile**: Form must be touch-friendly; consider single-column layout on mobile
+
+**Related Stories:** INT-001, INT-004, DRW-006, DRW-010, ERR-003
+
+---
+
 ## Summary
 
 | ID | Story | Tier | Effort |
@@ -218,3 +265,4 @@ Interacting with map features through selection, hover, popups, and filtering.
 | INT-003 | Hover to Highlight Feature | Standard | Small |
 | INT-004 | Display Feature Popup | Foundation | Medium |
 | INT-005 | Filter Features by Attribute | Standard | Medium |
+| INT-006 | Edit Feature Attributes | Foundation | Medium |

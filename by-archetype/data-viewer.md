@@ -55,6 +55,9 @@ These stories are essential for data viewers:
 ### Styling
 - [STY-001](../by-category/11-styling.md#sty-001-style-by-attribute-categorical): Style by Attribute (Categorical)
 
+### Controls
+- [CTL-007](../by-category/09-controls-ui.md#ctl-007-display-legend): Display Legend
+
 ### Integration
 - [ITG-003](../by-category/15-integration.md#itg-003-authenticate-users): Authenticate Users
 
@@ -91,6 +94,9 @@ These stories significantly enhance the viewing experience:
 
 ### Controls
 - [CTL-005](../by-category/09-controls-ui.md#ctl-005-fullscreen-mode): Fullscreen Mode
+
+### Navigation
+- [NAV-008](../by-category/01-navigation.md#nav-008-save-and-restore-map-views-bookmarks): Save and Restore Map Views (Bookmarks)
 
 ### Import/Export
 - [IMP-003](../by-category/10-import-export.md#imp-003-export-map-as-image): Export Map as Image

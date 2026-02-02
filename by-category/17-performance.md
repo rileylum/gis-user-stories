@@ -22,7 +22,7 @@ Fast loading, offline capability, and system responsiveness.
 - [ ] Critical resources load first (basemap, essential layers)
 - [ ] Progress indicator shows while loading
 - [ ] Non-critical content loads progressively
-- [ ] Performance is acceptable on slower connections
+- [ ] Map is interactive within 5 seconds on 3G connections (1.5 Mbps)
 - [ ] _[Customize: Performance targets for different network conditions]_
 
 **Variations:**
